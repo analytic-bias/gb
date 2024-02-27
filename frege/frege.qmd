@@ -1,0 +1,2413 @@
+# A Fregean Foundational System
+
+> “If it is one of the tasks of philosophy to break the domination of
+> the word over the human spirit by laying bare the misconceptions that
+> through the use of language often almost unavoidably arise concerning
+> the relations between concepts and by freeing thought from that with
+> which only the means of expression of ordinary language, constituted
+> as they are, saddle it, then my ideography, further developed for
+> these purposes, can become a useful tool for the philosopher. To be
+> sure, it too will fail to reproduce ideas in a pure form, and this is
+> probably inevitable when ideas are represented by concrete means; but,
+> on the one hand, we can restrict the discrepancies to those that are
+> unavoidable and harmless, and, on the other hand, the fact that they
+> are of a completely different kind from those peculiar to ordinary
+> language already affords protection against the specific influence
+> that a particular means of expression might exercise.”[1]
+
+—<span class="smallcaps">Gottlob Frege</span>, *Begriffsschrift*,
+\[1879\]
+
+## Frege’s Logicist Dream.
+
+Frege’s *Begriffsschrift*, or conceptual ideography, was a partial
+fulfillment of Leibniz’s dream of a universal logical language in which
+philosophical and mathematical concepts could be expressed with great
+precisions. Once this language was discovered, Leibniz envisions,
+answers to philosophical questions could be resolved, as in mathematics,
+by a *calculus philosophicus* or *ratiocinator*. Unlike his predecessors
+such Boole and Schröder who used mathematical symbols and fo*r*mulae to
+calculate logical relations, Frege’s goal was more radical: to construct
+a fundamentally new and more powerful *symbolic logic* that could serve
+as the *foundation* for mathematics.
+
+Frege dreamed of constructing the logical foundations for arithmetic.
+This dream was known as *logicism*, which can be expressed as the
+following thesis:
+
+Arithmetic = Logic + Set Theory.
+
+To fulfill this dream Frege realized he had to discover, or create, a
+more powerful conception of logic than Aristotle and to create a more
+rigorous concept of proof than Boole. Frege’s *Begriffsschrift* \[1879\]
+is now regarded as the “founding document” of modern logic.[2] Jean van
+Heijenoort who edited, and set a high standards for scholarship in
+logic, wrote the following in his classic resource book in mathematical
+logic *From Frege to Gödel*:
+
+> This is the first work that Frege wrote in the field of logic, and,
+> although a mere booklet of eighty-eight pages, it is perhaps the most
+> important single work ever written in logic. Its fundamental
+> contributions, among lesser points, are the truth-functional
+> propositional calculus, the analysis of the proposition into function
+> and argument(s) instead of subject and predicate, the theory of
+> quantification, a system of logic in which derivations are carried out
+> exclusively according to the form of the expressions, and a logical
+> definition of the notion of mathematical sequence. Any single one of
+> these achievements would suffice to secure the book a permanent place
+> in the logician's library.
+
+Frege compared his *Begriffsschrift* to a microscope (fittingly, Frege’s
+research was anonymously supported by a company that made precision
+optical equipment):
+
+I believe that I can best make the relation of my ideography
+\[*Begriffsschrift*\] to ordinary language clear if I compare it to that
+which the microscope has to the eye. Because of the range of its
+possible uses and versatility with which it can adapt to the most
+diverse circumstances, the eye is far superior to the microscope....
+But, as soon as scientific goals demand great sharpness of resolution,
+the eye proves to be insufficient. The microscope, on the other hand, is
+perfectly suited to precisely such goals....
+
+Like a microscope, Frege’s *Begriffsschrift* would resolve philosophical
+confusions with the clarity of logical precision:
+
+If it is one of the tasks of philosophy to break the domination of the
+word over the human spirit by laying bare the misconceptions that
+through the use of language often almost unavoidably arise concerning
+the relations between concepts and by freeing thought from that with
+which only the means of expression of ordinary language, constituted as
+they are, saddle it, then my Concept Script, further developed for these
+purposes, can become a useful tool for the philosopher.
+
+Frege’s discovery was that a new and more comprehensive logic could be
+based, not on the *subject* and *predicate* distinction of Aristotelian
+logic, but on the mathematical notion of *function* and *argument*.
+Frege predicted, “In particular, I believe that the replacement of the
+concepts of *subject* and *predicate* by *argument* and *function*,
+respectively, will stand the test of time.”
+
+<img src="./attachments/$myfilename/media/image1.png"
+style="width:1.67986in;height:1.4625in" alt="begriffschrift" />The
+reception of Frege’s work was hindered by the forbidding nature of his
+notation. Russell in his preface to *The Philosophy of Mathematics* said
+he had seen Frege’s *Grundgesetze der Arithmetik* \[vol. 1, 1893\] but
+admitted that he had “failed to grasp its importance or to understand
+its contents” because of “the great difficulty of his symbolism” \[p.
+xvi\]. A sample of Frege’s notation is displayed (*right*).[3]
+
+Frege’s writings contain two conceptions of generality.In his
+*Begrifftsschrift*, Frege explained the notion of generality \[*Die
+Allgemeinheit*\] *semantically* by stating that each instance of a
+generality is a fact, but later added the “illuminating” observation
+that generality can be inferred from *provability* from an arbitrary
+instance. Translating his notation into modern symbols, Frege had
+formulated the rule:[4]
+
+> It is even illuminating that one can derive P → ∀*x*F*x* from P →
+> F*a*, if P is an expression in which *a* does not occur and if *a*
+> stands in F*a* only in argument places.
+
+These two notions of generality correspond to the *semantics* for
+universal quantification (UI) and the syntactical inference rule of
+universal generalization (UG) or, alternatively, the derivation form
+known as universal derivation (UD). In his *Grundgesetze der
+Arithmetik*, Frege introduced quantification as a *second-order
+concept*—or as a concept of concepts.
+
+Frege believed that “Every good mathematician is at least half a
+philosopher, and every good philosopher is at least half a
+mathematician.”[5] Here Frege’s relatively half-hearted, and reserved,
+claim can be constrained with Leibniz’s full-throated proclamation:
+“Without mathematics we cannot penetrate deeply into philosophy. Without
+philosophy we cannot penetrate deeply into mathematics. Without both we
+cannot penetrate deeply into anything.”[6]
+
+As a philosopher of language, Frege’s work set much of the agenda of
+20<sup>th</sup> century analytic philosophy.[7] As a logician and
+mathematician, Frege set a standard of rigor[8] that was not equaled in
+Russell and Whitehead’s *Principia Mathematica* \[1910 – 1913\]. In
+Quine’s (1908 – 2000) famous assessment: “Logic is an old subject, and
+since 1879 has been a great one.”
+
+In this chapter, we want to get some sense of the grandeur of Frege’s
+vision, how Frege’s more power symbolic logic was able to subsume
+earlier developments of logic such as Aristotle’s syllogism and Boole’s
+algebra of logic, and how Frege’s ill-fated conception of sets (or
+“courses of values”) licensed the fatal derivation of Russell’s paradox
+leading Frege to dred that his life’s work had been a star-crossed
+dream.
+
+## Fregean versus Cantorian Set Theory.
+
+How does Fregean set theory d*iffer from Cantorian set theory? First
+let’s state a principle upon which both conceptions agree, namely, the
+axiom* *of* *extensionality*, which states that set identity depends
+only on membership.
+
+*Axiom of Extensionality.* Sets are identical if (and only if) they have
+the same members:
+
+*x* = *y* ↔ ∀*z*(*z* ∈ *x* ↔ *z* ∈ *y*) ,
+
+where the e*x*pression ‘*x* ∈ *y*’ is read ‘*x* is a member of *y*’.
+(The *“only if”* part of the biconditional follows by the logic of
+identity.)
+
+The second axiom of sets, known as the *Naïve Comprehension* *axiom*,
+distinguishes Fregean from Cantorian set theory. Given a formal logical
+language in which ϕ(*x*) is a well-formed formula containing the free
+variable *x,* then there exists a set
+
+{*x*|ϕ(*x*)} ,
+
+consisting of the objects which have the property expressed by ϕ(*x*).
+The e*x*pression ‘{*x*|ϕ(*x*)}’ is read ‘the set of all *x* such that
+ϕ(*x*)’.
+
+The axiom is denigrated as “naïve” insofar it now seems obvious that
+treating sets as *extensions* of concepts leads to contradiction.
+According to Cantorian set theory, sets are collections built up
+iteratively by constructing all possible subsets of previous sets
+beginning with the empty set or a primitive set of ur-elements.
+
+The conceptual parting of the ways between Fregean and Cantorian set
+theory can be illustrated by conundrum posed to children: what happens
+when an *irresistible* force meets an *immovable* object? The problem is
+that an irresistible force cannot co-exist with an immovable object.
+Stories with disguised self-contradictory properties have been told in
+many ancient cultures and serve as cultural metaphors for logical
+contradictions. [9]
+
+What Russell’s paradox has to do with the non-existence of a universe of
+a set all sets—the tension between Cantor’s powerset theorem and Frege’s
+postulation of the existence of the universe of all sets—we’ll come back
+to later. Our goal for the present is to formulate a first-order Fregean
+foundational system and to derive the Basic Laws of Arithmetic, also
+known as Peano Postulates, as theorems of that system. Only then shall
+we revisit this question why paradoxes arise.
+
+<span class="smallcaps">Exercises</span>:
+
+1\. Much of what Frege wrote on philosophical logic remained
+unpublished. Frege and his wife Margaret had several children, all of
+whom died young, and so they adopted a son, Alfred, who became an
+engineer. When Frege made his will in January 1925, he left his
+unpublished papers to Alfred, with the following note:
+
+Six months later, Frege died. He did not know that he would come to be
+regarded as a founding father of the most influential movement in 20th
+century philosophy.
+
+Symbolize the following sentences using the dictionary provided using
+modern quantifier-predicate logic, which is due to Frege.
+
+*Dictionary*:
+
+> W*xy*: *x* is written by *y* J*x*: *x* is published S*xy*: *x* is a
+> spouse of *y*
+>
+> E: Frege G*x*: *x* is (a piece of) gold C*xy*: *x* is a child of *y*
+>
+> B: *Begriffsschrift* H*xy*: *x* has *y* K*xy*: *x* was adopted by *y*
+>
+> A: Alfred M*x*: *x* is male L*x*: *x* was no longer alive
+>
+> D: Margaret F*x*: *x* is female
+>
+> G: *Die Grundlagen der Arithmetik* \[1884\]
+>
+> G<sub>1</sub>: *Die Grundgesetze der Arithmetik, vol. I* \[1893\].
+>
+> G<sub>2</sub>: *Die Grundgesetze der Arithmetik, vol. 2* \[1903\].
+
+1.  All of Frege’s unpublished writings have some gold (*or other*).
+
+*Paraphrase*: For all *x*, if *x* is written by Frege and *x* is
+unpublished, then there is a *y*, *y* is gold and *x* has *y.*
+
+1.  Some (particular) gold (one and the same) is contained in each of
+    > Frege’s unpublished writing.
+
+*Paraphrase*: There is a *y*, *y* is gold and for all *x*, if *x* is
+written by Frege and *x* is unpublished, then *x* has *y.*
+
+1.  It is not the case that none of Frege’s unpublished writings contain
+    > gold, but it is the case that not all of Frege’s unpublished
+    > writings contain gold.
+
+*Paraphrase*: It is not the case that no F is G, but it is the case not
+all F is G, where F = *x* is written by Frege and *x* is unpublished.
+
+Symbolize all possible, if not always plausible, ambiguous readings of:
+
+1.  There are two (elements of) gold contained in all of Frege’s
+    > unpublished writings.
+
+2.  There are two (elements of) gold in each of Frege’s unpublished
+    writings.
+
+\#2. Frege developed his own theory of definite descriptions.
+
+The *x* such that F is symbolized by ℩*x*F*x*.
+
+According to Frege’s theory, this term denotes the unique thing that
+satisfies F*x*, if there is such an *x.* Otherwise*,* the definite
+description is *improper*, and the term denotes the object chosen to be
+the denotation of all improper descriptions. This chosen object is
+always denoted by the logically improper definite description ℩*x x* ≠
+*x*.
+
+1.  There was one and only one author of the *Begriffsschrift* and that
+    individual is identical to the one and only author of the *Die
+    Grundlagen.*
+
+2.  The author of the *Begriffsschrift* is the author of *Die
+    Grundlagen*.
+
+3.  The largest prime number is identical to the non-self-identical
+    thing.
+
+4.  Margaret was the wife of Gottlob Frege.
+
+5.  Alfred was the adopted son of Gottlob and his wife Margaret.
+
+Frege’s logic was a second-order logic, which is more powerful than the
+first-order formulations of logic that are typically used today to
+express the mathematical theories in Zermelo-Fraenkel Set Theory. Our
+reconstruction of a Fregean foundational system will be a first-order
+formal system. However, we will examine Frege’s second-order laws
+temporarily to derive two first-order principles concerning sets and
+their extensions, which are consequences of his Basic Law V.
+
+*Frege’s Basic Law V*: For any concepts F and G,
+
+{*x*|F*x*} = {*x*|G*x*} ↔ ∀*x*(F*x* ↔ G*x*)
+
+There is an important principle that can be derived from Basic Law V—a
+second order versio of the Axioms of Comprehension:
+
+> *Axiom of Abstraction*: given any concept or property F, there is a
+> set consisting of all and only those things that “fall under” the
+> concept or have the property F, i.e.,
+
+∀*F*∀*x*(*x* ∈ {*y*|F*y*} ↔ F*x*} .
+
+In other words, any concept determines an object, namely, the
+*extension* of the concept or the set of all objects falling under the
+concept. It will turn out that seemingly innocuous principle is the
+faulty pillar of Frege’s foundational system. One way to see that it
+will violate a fundamental principle of “Cantorian Set Theory” is that
+this principle implies that there exists an object that corresponds to
+every concept, namely the set that is the extension of the concept.
+
+## A First-Order Fregean Foundational System
+
+*<u>Alphabet</u>*:
+
+*x*, *y*, *z*, ... the individual variables
+
+~, →, ∧, ∨, ↔ the logical connectives for sentential logic
+
+∀, ∃ the universal and e*x*istential quantifiers, respectively
+
+∈ the set membership relation
+
+{ | } the variable binding set forming operator
+
+), ( the pair of parentheses
+
+*<u>Grammar</u>*:
+
+(F1) Every individual variable is a term.
+
+(F2) If αand β are terms, then
+
+α ∈ β
+
+is a well-formed formula (wff).
+
+(F3) If ϕ and ψ are wffs, then so are
+
+~ϕ ,
+
+(ϕ ∧ ψ) ,
+
+(ϕ ∨ ψ) ,
+
+(ϕ → ψ) ,
+
+(ϕ ↔ ψ) .
+
+(F4) If *x* is a variable and ϕ is a wff, then
+
+∀*x*ϕ
+
+and
+
+∃*x*ϕ
+
+are wffs, in which the variable *x* is bound.
+
+(F5) If ϕ(*x*) is a wff containing the free variable *x,* then
+
+{*x*|ϕ(*x*)}
+
+is a term, in which the variable *x* is bound.
+
+<span class="smallcaps">Propositional Logic</span>: Here we use the
+KM<sup>2</sup> system of natural deduction with the three forms of
+derivation Direct Derivation \[DD\], Conditional Derivation \[CD\], and
+Indirect Derivation \[ID\], as well as the derived form of Biconditional
+Derivation \[BD\]. We shall freely cite sentential inference rules,
+sequences of inference rules, and theorems.
+
+<span class="smallcaps">Quantifier Logic</span>: Here we use the
+KM<sup>2</sup> rules universal instantiation \[UI\], existential
+instantiation \[EI\], existential generalization \[EG\], Universal
+Derivation \[UD\], and the derived rules of the derived rules quantifier
+negation \[QN\].
+
+Our Fregean set theory, discussed above, can be formulated as a pair of
+axioms:
+
+<span class="smallcaps">Axiom of Extensionality</span>: α = β ↔ ∀*z*(*z*
+∈ α ↔ *z* ∈ β), where *z* is the first variable that does not occur in
+either of the terms α or β.
+
+<span class="smallcaps">First-Order Axiom Schema of Abstraction</span>:
+∀*x*\[*x*∈{*y*|ϕ(*y*)} ↔ ϕ(*x*)\], where the variable *y* occurs free in
+ϕ(*y*), and ϕ(*x*) comes from ϕ(*y*) by replacing all the free
+occurrences of *y* in ϕ(*y*) with free occurrences of the variable *x*
+in ϕ(*x*).
+
+<u>Notation</u>: Square brackets will be interchanged with a pair of
+matching parentheses for readability. We use the abbreviations ‘α ≠ β’
+for ‘~ α = β’ and ‘α ∉ β’ for ‘~ α ∈ β’.
+
+## Theorems of the Fregean Foundational System
+
+We begin by establishing the existence of the universal set. The first
+step is to show that every set is equal to itself. According to
+propositional logic, we have the theorem T91 P ↔ P, which has as an
+instance,
+
+*y* ∈ *x* ↔ *y* ∈ *x ,*
+
+which implies by UD and extensionality that every set is equal to
+itself.
+
+***Theorem*** 1. ∀*x* *x* = *x* (Every set is equal to itself.)
+
+1\. *<s>Show</s>* ∀*x* *x* = *x* 5, UD
+
+2\. *<s>Show</s>* ∀*y*(*y* ∈ *x* ↔ *y* ∈ *x*) 3, UD
+
+3\. *y* ∈ *x* ↔ *y* ∈ *x* **T**91
+
+4\. *x* = *x* ↔ ∀*y*(*y* ∈ *x* ↔ *y* ∈ *x*) *Extensionality*
+
+5\. *x* = *x* 4, BC, 2, MP
+
+Having established that every set is self-identical, we can define the
+universal set.
+
+***Definition* 1**. V := {*x*|*x* = *x*} (V is the *universal set*)
+
+Everything is a member of the universal set V, including V itself.
+
+***Theorem*** 2. ∀*x* *x* ∈ V
+
+1\. *<s>Show</s>* ∀*x* *x* ∈ V 4, UD
+
+2\. *<s>Show</s>* ∀*x* *x* ∈ {*x*|*x* = *x*} 5, UD
+
+3\. ∀*x*\[*x* ∈ {*x*|*x* = *x*} ↔ *x* = *x*\] *Abstraction*
+
+4\. *x* ∈ {*x*|*x* = *x*} ↔ *x* = *x* 3, UI
+
+5\. *x* = *x* Theorem 1, UI
+
+6\. *x* ∈ {*x*|*x* = *x*} 4, BC, 5, MP
+
+7\. ∀*x* *x* ∈ V 2, Def. V
+
+***Corolla***ry 2.1. **V** ∈ **V** (The universal set V contains
+itself.)
+
+Next we construct the empty set ∅ using the universal negative property
+of being non-self-identical.
+
+***Definition*** 2. ∅ = {*x*|*x* ≠ *x*}
+
+Since nothing has the property of being non-self-identical, the empty
+set has no members.
+
+***Theorem*** 3. ∀*x* *x* ∉ ∅
+
+Does the empty set really exist? Bas van Fraassen offered the following
+“ontological proof” for the existence of the empty set for skeptics:
+“The fool hath said in his heart “there is no empty set.” But then
+consider the set of all empty sets. This set would be empty.
+Contradiction. Hence, the empty set exists.”
+
+By extensionality, the empty set is unique.
+
+***Theorem*** 4. ∀*y* (∀*x* *x* ∉ *y* ↔ *y* = ∅)
+
+Next we define some set-theoretic relations—subsets, power sets,
+complements, intersections, unions—that enable us to derive the
+principles of *Boolean algebra* as theorems.
+
+***Definition*** 3. A ⊆ B := ∀*z*(*z* ∈ A → *z* ∈ B), where the variable
+*z* does not occur in A or B.
+
+***Theorem* 5**. A = B ↔ A ⊆ B ∧ B ⊆ A
+
+The *complement* of a set A is defined as the set of all things *not* in
+A.
+
+***Definition*** 4. A<sup>c</sup> := {*x* | *x* ∉ A}, where A is any
+set.
+
+The *intersection* of sets A and B is defined as the set of elements in
+both A and B.
+
+***Definition*** 5. (A ∩ B) := {*x* | *x* ∈ A ∧ *x* ∈ B}, where A and B
+are sets.
+
+The *union* of sets A and B is defined as the set of all things that are
+elements of A or B.
+
+***Definition*** 6. (A ∪ B) := {*x* | *x* ∈ A ∨ *x* ∈ B}, where A and B
+are sets.
+
+The *difference* of sets A and B is defined as the set of all things
+that are elements of A but not of B.
+
+***Definition*** 7. (A ─ B) := {*x* |*x* ∈ A ∧ *x* ∉ B}, where A and B
+are sets.
+
+<span class="smallcaps">Exercises.</span>
+
+\#1. Construct proofs for Theorems 3, 4, and 5.
+
+\#2. Prove each of the following conditions are equivalent. You may use
+the corresponding biconditional propositional theorems and the rule of
+Interchange of Equivalence \[IE\]:
+
+1.  A ⊆ B
+
+2.  A ∩ B = A T72 (P → Q) ↔ \[(P ∧ Q) ↔ P\]
+
+3.  A ∪ B = B T73 (P → Q) ↔ \[(P ∨ Q) ↔ Q\]
+
+4.  B<sup>c</sup> ⊆ A<sup>c</sup> T13 (P → Q) ↔ (~Q → ~P)
+
+5.  B – (B – A) = A
+
+For illustration, we construct a biconditional derivation to establish
+the equivalence of (1) and (2).
+
+1.  *<s>Show</s>* (A ⊆ B) ↔ A ∩ B = A 6, BD
+
+2.  A ⊆ B Assume (BD)
+
+3.  ∀*x*(*x* ∈ A → *x* ∈ B) 2, Def. ⊆
+
+4.  ∀*x*(*x* ∈ A ∧ *x* ∈ B ↔ *x* ∈ A) 3, T72, IE
+
+5.  ∀*x*(*x* ∈ A ∩ B ↔ *x* ∈ A) 4, Def. ∩
+
+6.  A ∩ B = A 5, <span class="smallcaps">Ext</span>.
+
+In a *biconditional derivation* you may assume one constituent of the
+biconditional and then each succeeding line must be obtained by an
+Interchange of Equivalents (IE), i.e., by a previously proven
+biconditional theorem, a definition, or an axiom—until the other
+constituent is obtained. Then the subsequent lines can be boxed and
+cancelled by biconditional derivation \[BD\].
+
+This exercise establishes the following family of theorems:
+
+Theorem B-1. A ⊆ B ↔ A ∩ B = A ↔ A ∪ B = B ↔ B<sup>c</sup> ⊆
+A<sup>c</sup> (<span class="smallcaps">Subset Theorems</span>)
+
+\#3. Prove the following theorems of Boolean Algebra.
+
+Theorem B-2 A ∩ A = A; A ∪ A = A (<span class="smallcaps">Idempotent
+Laws</span>)
+
+Theorem B-3. A ∩ ∅ = ∅; A ∪ V = V (<span class="smallcaps">Identity
+Laws</span>)
+
+Theorem B-4. (A ∩ B) ⊆ A ⊆ (A ∪ B) (<span class="smallcaps">Max and Min
+Laws</span>)
+
+Theorem B-5. (A ⊆ C) ∧ (B ⊆ C) → (A ∪ B) ⊆ C
+
+(C ⊆ A) ∧ (C ⊆ B) → C ⊆ (A ∩ B)
+
+Theorem B-6. A ∩ (A ∪ B) = A; A ∪ (A ∩ B) = A
+(<span class="smallcaps">Absorption Laws</span>)
+
+Theorem B-7. A ∩ B = B ∩ A; A ∪ B = B ∪ A
+(<span class="smallcaps">Commutative Laws</span>)
+
+Theorem B-8. A ∩ (B ∩ C) = (A ∩ B) ∩ C; A ∪ (B ∪ C) = (A ∪ B) ∪ C
+(<span class="smallcaps">Associative Laws</span>)
+
+Theorem B-9. A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C); A ∪ (B ∩ C) = (A ∪ B) ∩ (A
+∪ C) (<span class="smallcaps">Distributive Laws</span>)
+
+Theorem B-10. \[(A ∪ B = ∅ ∧ A ∪ C = ∅) ∧ (A ∩ B = V ∧ A ∩ C = V)\] →
+B=C (<span class="smallcaps">Complement Unique</span>)
+
+Theorem B-11. (A ∩ B)<sup>c</sup> = (A<sup>c</sup> ∪ B<sup>c</sup>); (A
+∪ B)<sup>c</sup>= (A<sup>c</sup> ∩ B<sup>c</sup>)
+(<span class="smallcaps">DeMorgan’s Laws</span>)
+
+Theorem B-12. A ⊆ B → (C ─ A) ⊆ (C ─ B)
+(<span class="smallcaps">difference Laws</span>)
+
+A ─ B = A ─ (A ∩ B)
+
+> B ─ (B ─ A) = A
+
+A ∪ (B ─ A) = B
+
+C ─ (A ∪ B) = (C ─ A) ∩ (C ─ B)
+
+For illustration, we construct a formal derivation of the first form of
+DeMorgan’s Laws.
+
+<table>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 54%" />
+<col style="width: 34%" />
+<col style="width: 5%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>1.</th>
+<th><em><del>Show</del></em> (A ∩ B)<sup>c</sup> = (A<sup>c</sup> ∪ B
+<sup>c</sup>)</th>
+<th>11, DD</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2.</td>
+<td><em><del>Show</del></em> ∀<em>x</em>[<em>x</em> ∈ (A ∩
+B)<sup>c</sup> ↔︎ <em>x</em> ∈ (A<sup>c</sup> ∪ B <sup>c</sup>))]</td>
+<td>3, UD</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>3.</td>
+<td><em><del>Show</del></em> [<em>x</em> ∈ (A ∩ B)<sup>c</sup> ↔︎
+<em>x</em> ∈ (A<sup>c</sup> ∪ B <sup>c</sup>))]</td>
+<td>10, BD</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>4.</td>
+<td><em>x</em> ∈ (A ∩ B) <sup>c</sup></td>
+<td>Assume (BCD)</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>5.</td>
+<td><em>x</em> ∉ (A ∩ B)</td>
+<td>Def. A<sup>c</sup></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>6.</td>
+<td><em>x</em> ∉ {<em>x</em> | <em>x</em> ∈ A ∧ <em>x</em> ∈ B}</td>
+<td>Def. ∩</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>7.</td>
+<td>~[<em>x</em> ∈ A ∧ <em>x</em> ∈ B]</td>
+<td>Abstraction</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>8.</td>
+<td>[<em>x</em> ∉ A ∨ <em>x</em> ∉ B]</td>
+<td>T65 DeMorgan’s Law</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>9.</td>
+<td><em>x</em> ∈ A<sup>c</sup> ∨ <em>x</em> ∈ B <sup>c</sup></td>
+<td>Def. A<sup>c</sup></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>10.</td>
+<td><em>x</em> ∈ A<sup>c</sup> ∪ B <sup>c</sup></td>
+<td>Def. ∪</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>11.</td>
+<td>(A ∩ B)<sup>c</sup> = (A<sup>c</sup> ∪ B <sup>c</sup>)</td>
+<td>2, Def. =</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+## A Digression: Boole’s Life and Logic.
+
+> “The design of the following treatise is to investigate the
+> fundamental laws of those operations of the mind by which reasoning is
+> performed; to give expression to them in the symbolical language of a
+> Calculus, and upon this foundation to establish the science of Logic
+> and construct its method; to make that method itself the basis of a
+> general method for the application of the mathematical doctrine of
+> Probabilities; and, finally, to collect from the various elements of
+> truth brought to view in the course of these inquiries some probable
+> intimations concerning the nature and constitution of the human mind.”
+
+— <span class="smallcaps">George Boole</span>, *An Investigation of the
+Laws of Thought* (1854)
+
+Logic, according to Boole, deals with the “laws of thought”—those
+“fundamental laws of those operations of the mind by which reasoning is
+performed.” These laws can be expressed mathematically as a calculus or
+algebra. Boole regarded his discovery of the laws of thought as
+discovering the workings of the mind just as Newton’s laws of physics
+had discovered the laws of nature.
+
+(B<sub>1</sub>) Logic deals with the “laws of thought”;
+
+(B<sub>2</sub>) The laws of thought can be expressed mathematically as
+algebraic laws;
+
+> (B<sub>3</sub>) The laws of thought mirror the physics of the mind.
+
+Contemporary philosophers would be careful to distinguish between the
+*descriptive* or *empirical* laws of thought and the *prescriptive* or
+*normative* laws of the science of correct reasoning. Nevertheless,
+Boole’s conception of his project was an inspiring one.
+
+In the digital world today, one often hears about “Boolean variables”—0
+and 1, true or false. One might think, what a simple idea! Why did
+someone have to invent it? What sense can be made of such peculiar
+equations as 1 + 1 = 0? In this chapter, we shall look at the backstory
+of Boole’s work in logic in which Boolean variables are simply a
+beginning.[10]
+
+<img src="./attachments/$myfilename/media/image2.jpeg"
+style="width:1.42153in;height:1.90486in"
+alt="Macintosh HD:private:var:folders:ov:oveamxF0ETa9BRKNrnRT0++++TM:-Tmp-:TemporaryItems:George_Boole_color.jpg" />George
+Boole (1815-1864) was the son of a poor English shoemaker who had a
+strong interest in science and mathematics, in Lincoln, England. George
+was a self-taught prodigy. At the age of 14, young George translated a
+Greek poem that was published in the local paper. At the age of 16, he
+was hired as a teacher and learned calculus on his own. Supporting
+himself by starting his own elementary school at the age of 19, Boole
+developed educational theories about the importance of discovery,
+emphasizing the importance of deep understanding as opposed to rote
+memorization. By the age of 23, he began publishing papers on the
+mathematics of his time, but his interests soon turned towards
+expressing the laws of logic in a mathematical form, which would become
+to be known as the Boolean algebra of logic. A talented lecturer Boole
+explored way of bending algebra so it could be used to express laws of
+logic so that algebraic operations would corresponding to valid logical
+inferences.
+
+The result was a concise monograph, 86 pages in length, entitled *The
+Mathematical Analysis of Logic* \[1847\]. As a result of this book,
+Boole began corresponding with leading British mathematicians of his
+day. Boole considered going to Cambridge to become a “university person”
+but was put off then told he would have to start with a standard
+undergraduate course and stop doing his own research. Boole’s friend,
+the logician Augustus De Morgan had become involved in controversies,
+and this caused Boole to shy away from controversy and to continue
+developing his own thoughts on the matter.
+
+Approaching logic in terms of mathematics was significant because it
+brought together two streams of thought. Since ancient times, logic and
+mathematics has developed on different trajectories. Although Aristotle
+regarded logic as propaedeutic to science and mathematics, Aristotle’s
+syllogistic logic was inadequate for explaining the mathematical
+reasoning involved in Euclid’s *Elements*. The philosopher Gottfried
+Wilhelm Leibniz (1646 – 1716) had dreamed of a universal alphabet of
+thought (*characteristic universalis)* in which ideas could be
+represented to that disputes among philosophers could be resolved by a
+symbolic logic (*calculus ratiocinator*) in the same way as disputes
+among mathematicians:
+
+> The only way to rectify our reasonings is to make them as tangible as
+> those of the Mathematicians, so that we can find our error at a
+> glance, and when there are disputes among persons, we can simply say:
+> Let us calculate, without further ado, to see who is right.
+
+Boole’s work was revolutionary because it brought these two streams of
+thought that has been developing independently—logic and
+mathematics—together. In 1849 Boole was hired by Queen’s College, Cork
+(now University College Cork) as its first professor of mathematics
+(which was considered a less prestigious than classical subjects like
+Latin or Greek).[11]
+
+As a university professor, Boole began writing his famous book *An
+Investigation of the Laws of Thought: the Mathematical Theories of Logic
+and Probabilities* \[1854\]*.* The first part of the book expresses the
+laws of thought as algebraic laws in which the variables take on the
+Boolean values of 0 or 1. In the second part of the book, the algebraic
+variables are interpreted as probabilities also taking on values between
+0 and 1. In the final chapter of his book, Boole discusses such
+philosophical questions as whether free will is compatible with definite
+laws of thought and whether there are truths that go beyond what
+mathematical laws can explain.
+
+Eager to apply his methods to philosophical arguments such as proofs for
+the existence of God’s existence, Boole illustrated his logic by
+applying it to the proofs given by Samuel Clarke. (Clark was a follower
+of Newton, who was embroiled in a bitter dispute with Leibniz about
+priority in the discovery the calculus.) Here Boole was careful to
+distinguish between proving the truth of the conclusion and proving that
+the conclusion of an argument followed logically from its premises:
+
+> Herein too may be felt the powerlessness of mere Logic, the
+> insufficiently of the profoundest knowledge of the laws of the
+> understanding, to resolve those problems which lie nearer to our
+> hearts, as progressive years strip away from our life the illusions of
+> its golden dawn.
+
+<table>
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 29%" />
+<col style="width: 29%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Logic</th>
+<th>Algebra</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="smallcaps">Law of Non-Contradiction</span></td>
+<td>~(P ∧ ~P)</td>
+<td><em>x</em> ⊗ (1 − <em>x</em>) = 0</td>
+</tr>
+<tr class="even">
+<td><span class="smallcaps">Law of Excluded Middle</span></td>
+<td><span class="smallcaps">(P ∨ ~P)</span></td>
+<td><em>x</em> ⊕ (1 − <em>x</em>) = 1</td>
+</tr>
+</tbody>
+</table>
+
+Logic can determined whether a conclusion such as “God exists” follows
+from a set of premises, but it cannot determined exactly what the
+premises state or, given they have some definite meaning, whether they
+are true. “The chief practical difficulty of this inquiry,” Boole noted,
+“will consist, not in the application of the method to the premises once
+determined, but in ascertaining what the premises are.”
+
+While at Queen’s College George Boole met in 1850 his future Mary
+Everest, the niece of a John Ryall, a professor of Greek, and they were
+married give year later. Although single for most of his life, Boole
+married at the age of in 1855. Although single for most of his life
+Boole at the age of 40 married Mary Everest Boole, who was 17 years
+younger. Boole died seven years later after walking in the rain to give
+his lecture while soaking wet. His wife, following the medical advice of
+the day, doused him with cold water when he got home. Boole caught
+pneumonia and died. His wife outlived him by 56 years and published
+books herself with such intriguing titles as *Philosophy and the Fun of
+Algebra*, *Logic Taught by Love*, and *The Message of Psychic Science to
+the World*.
+
+Boole’s work is based upon observing an intriguing symmetry between the
+laws of logic and algebra. Imagine Boole’s excitement at discovering
+that Aristotle’s Laws of Thought could be formulated in a Boolean
+algebra in which the values of the variables are either 1 or 0,
+corresponding to true and false! Propositions in logic have one of the
+two truth-values, true or false. This is analogous to an algebra in
+which the values of the variables are one of two distinct values 1 or 0.
+If a variable *x* has one of those two values, then its *complement* (1
+− *x*) has the opposite value, thus corresponding to *negation* in
+logic. The *product* of *x* and *y*, *x* ⊗ *y*, has the value 1 if and
+only if both *x* and *y* have the value 1, which corresponds to the
+truth rule for “*and*”: a *conjunction* (P ∧ Q) is true if and only if
+both P and Q are true.
+
+<table>
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 10%" />
+<col style="width: 17%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><em>x</em> ⊗ <em>y</em></th>
+<th>0</th>
+<th>1</th>
+<th></th>
+<th>(P ∧ Q)</th>
+<th>F</th>
+<th>T</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td></td>
+<td>F</td>
+<td>F</td>
+<td>F</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td></td>
+<td>T</td>
+<td>F</td>
+<td>T</td>
+</tr>
+</tbody>
+</table>
+
+In defining the operation of addition ⊕, the above correspondences still
+leave open two choices. These choices correspondence to two
+interpretations for the disjunction—the *inclusive* “*or*” (symbolized
+by ‘∨’ for the Latin *vel*) or the *exclusive* ‘*or’* (in Latin *aut* or
+in computer science *xor* and symbolized by ⊽ or the negation of a
+biconditional ↮):
+
+<table>
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 7%" />
+<col style="width: 21%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><em>x</em> ⊕ <em>y</em></th>
+<th>0</th>
+<th>1</th>
+<th></th>
+<th>(P ∨ ⊽ Q)</th>
+<th>F</th>
+<th>T</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td></td>
+<td>F</td>
+<td>F</td>
+<td>T</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>1</td>
+<td>1/0</td>
+<td></td>
+<td>T</td>
+<td>T</td>
+<td>T/F</td>
+</tr>
+</tbody>
+</table>
+
+The latter interpretation leads to the equation 1 + 1 = 0, which looks
+suspicious. At least it did to the English logician William Stanley
+Jevons (1835 -1882), who, in an 1863 letter, criticized Boole harshly:
+
+> It is surely obvious, however, that X + X is equivalent only to X, …
+> Professor Boole’s notation … is inconsistent with a self-evident law.
+> If my view be right, his system will come to be regarded as a most
+> remarkable combination of truth and error.
+
+Evidently Jevons was thinking of + in terms of an operation like the
+*union* of set in which we have the law *x* ∪ *x* = *x*. However,
+Boole’s conception of + was in terms of the *disjoint* union of X and Y,
+so that
+
+X + Y = (X – Y) ∪ (Y – X) , whereupon substituting X for Y yields *x* +
+*x* = 0. When Jevons continued to press his criticism, Boole in
+exasperation replied:
+
+> To be explicit, I now, however, reply that it is not true that in
+> Logic *x* + *x* = *x*, though it is true that *x* + *x* = 0 is
+> equivalent to *x* = 0. If I do not write more it is not from any
+> unwillingness to discuss the subject with you, but simply because if
+> we differ on this fundamental point it is impossible that we should
+> agree in others.
+
+Obviously how will formulate the laws of logic will depend on how + is
+to be interpreted. For example, here are two forms of disjunction
+syllogism—one is formulated using the exclusive ‘*or’* and the other
+using with the *inclusive* ‘*or’*. The Boolean equations on the right
+correspond to the law of disjunctive syllogism (*inclusive* or
+*exclusive* ‘*or’*) on the left:
+
+<table>
+<colgroup>
+<col style="width: 31%" />
+<col style="width: 26%" />
+<col style="width: 41%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th colspan="2"><span class="smallcaps">Disjunctive
+Syllogisms</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><em>Inclusive</em> ‘<em>or’</em></td>
+<td><p>P ∨ Q</p>
+<p>~ P</p>
+<p>∴ Q</p></td>
+<td><p><em>x</em> + <em>y</em> − <em>xy</em> = 1</p>
+<p><em>x</em> = 0</p>
+<p>∴ <em>y</em> = 1</p></td>
+</tr>
+<tr class="even">
+<td><em>Exclusive</em> ‘<em>or’</em></td>
+<td><p>P ⊽ Q</p>
+<p>P</p>
+<p>∴ ~ Q</p></td>
+<td><p><em>x</em> + <em>y</em> − 2<em>xy</em> = 1</p>
+<p><em>x</em> = 1</p>
+<p><em>∴ y</em> = 0</p></td>
+</tr>
+</tbody>
+</table>
+
+Rather than challenging individual laws in isolation, it is more help to
+examine how the proposed laws functioned within Boole’s *system* of
+algebraic logic.
+
+Why was Frege’s conception of logic an advance over Boole’s? Out the
+outset it is important to distinguish, as Boole did not, between the
+*descriptive* *empirical* laws “concerning the nature and constitution
+of the human mind” and the *prescriptive* *normative* laws of the
+science of logic. Boole’s conception of logic as the laws of thought
+confused descriptive and prescriptive questions: do the laws of logic
+describe the physics of thought or do they prescribe what is required of
+correct thinking?
+
+Secondly, Boole failed to give a formal account of when a sequence of
+equations constituted a proof. Our Fregean Foundational system has been
+build on the foundation of a system of logic in which the rules of proof
+are formally characterized.
+
+Thirdly, Boole’s logic exploited isomorphisms between Aristotle’s
+Syllogistic Logic, Boolean Set Theory, and Propositional Logic; however,
+Boole’s logic was still inadequate for the formalizing of richness of
+mathematical thinking.
+
+Boolean algebras are useful because many different applications within
+logic, mathematics and linguistics share this kind of structure—the
+structure of partially order sets or *Posets*—with the operations of
+*join* and *meet*.
+
+-   Consider all the subsets of {*a*, *b*, *c*} ordered by the subset
+    relation with the operations of intersection ‘∩’ (*meet* or ↓ in the
+    lattice), union ‘∪’ (*joint* or ↑ in the lattice), and
+    complementation ‘A<sup>c</sup>’.
+
+-   Consider the set of numbers that are the set of factors of 30: {1,
+    2, 3, 5, 6, 10, 15, 30}. Interpret *meet* (or *infimum*) as the
+    greatest common divisor (↓ in the lattice), *join* (or *supremum*)
+    as the least common multiple (↑ in the lattice), and *inverse* of a
+    number *x* as the number 30/*x*.
+
+These two Boolean algebras have exactly the same structure. Indeed, the
+isomorphic mapping between the two lattices is easy to see when we
+replace each of the composite numbers on the right-hand lattice with set
+of their prime factors. (By convention 1 is not prime in order to ensure
+that every number as a unique prime factorization. Since 1 has no prime
+factors, it corresponds to the empty set.)
+
+The rules and the law for manipulating algebraic expressions that Boole
+formulated were sufficiently mechanical that the English logician W. S.
+Jevons was able to use them to build a mechanical reasoning machine,
+which he demonstrated, to the Royal Society in 1870.
+
+The relationships between Boolean Algebra and propositional logic can be
+seen in the following lattice, which happens to be equivalent to a
+tesseract or hyper-cube:
+
+<img src="./attachments/$myfilename/media/image3.emf"
+style="width:6.5in;height:4.875in" />
+
+What can be said in assessment of Boole’s logic? Boole developed a rich
+and suggested algebra of logic. Boole’s algebra has certain similarities
+with ordinary arithmetic, but also some striking differences. For
+example, the distributive laws of × over + holds:
+
+*x* × (*y* + *z*) = (*x* × *y*) + (*x* × *z*);
+
+However, the law of the distribution of + over × does not have a
+counterpart in ordinary arithmetic:
+
+*x* + (*y* × *z*) = (*x* + *y*) × (*x* + *z*) .
+
+Working with algebraic analogies, Boole did not provide a precise formal
+language, which leads to our first criticism: Boole failed to give a
+formal account of when a sequence of equations constituted a proof. Our
+second criticism is the Boole’s logic is *expressively inadequate*:
+Boole’s logic is still inadequate for the formalizing of richness of
+mathematical thinking. In particular, Boole’s logic is missing a
+calculus of relations. Thirdly, Boole failed to distinguish the
+descriptive from a prescriptive account of reasoning: does his laws of
+thought describe the physics of thought or do they prescribe the laws
+required for correct logical reasoning?
+
+## Peano’s Postulates as Theorems
+
+Next we commence a Fregean logical construction of the natural numbers.
+
+In order to answer the question “What is number?” correctly, one must be
+clear on, what Russell, influenced by Wittgenstein, called, the
+*grammar* of our inquiry. What we are seeking is not an understanding of
+particular numbers, like 0 and 1, but the concept of number itself. No
+particular collection having a certain number of objects, for example,
+will be identical with that number. Moreover, we must distinguish the
+concept of two collections *having the same number of elements*, which
+is logically prior to, but an essential step towards, logically
+constructing *the concept of number* in general.
+
+There is no better way to introduce puzzles about the concept number and
+the important of securing the foundations of arithmetic, than to quote
+the opening of Frege’s *Grundlagen*:
+
+> “When we ask someone what the number one is, or what the symbol 1
+> means, we get as a rule the answer “Why, a thing”. And if we go on to
+> point out that the proposition
+>
+> “the number one is a thing”
+>
+> is not a definition, because it has the definite article on one side
+> and the indefinite on the other, or that is only assigns the number
+> one to the class of things, without stating which thing it is, then we
+> shall very likely be invited to select something for
+> ourselves—anything we please—to call one. Yet, if everyone had the
+> right to understand by this name whatever he pleased, then the same
+> proposition about one would mean different things for different
+> people, —such propositions would have no common content.
+>
+> Some, perhaps, will decline to answer the question, pointing out that
+> it is impossible to state, either, what is meant by the letter *a*, as
+> it is used in arithmetic; and if we were to say ‘*a* means a number,”
+> this would be open to the same objection as the definition “one is a
+> thing.” Now I the case of *a* it is quite right to decline to answer:
+> *a* does not mean some one definite number which can be specified, but
+> serves to express the generality of general propositions. If, in *a* +
+> *a* – *a* = *a*, we put for *a* some number, any we please but the
+> same throughout, we get always a true identity. This is the sense in
+> which the letter *a* is used.
+>
+> With one, however, the position is essentially different. Can we, in
+> the identity 1 + 1 = 2 put for 1 in both places some one and the same
+> object, say the Moon? On the contrary, it looks as though, whatever we
+> put for the first 1, we must put something different for the second.
+> Why it is that we have to do here precisely what would have been wrong
+> in the other case?...”
+>
+> “Questions like these catch even mathematicians for that matter, or
+> most of them, unprepared with any satisfactory answer. Yet is it not a
+> scandal that our science should be so unclear about the first and
+> foremost among its objects, and one which is apparently so simple?
+> Small hope, then, that we shall be able to say what number is. If a
+> concept fundamental to a mighty science gives rise to difficulties,
+> then it is surely an imperative task to investigate it more closely
+> until those difficulties are overcome; especially as we shall hardly
+> succeed in finally clearing up negative numbers, or fractional or
+> complex numbers, so long as our insight into the foundation of the
+> whole of arithmetic is still defective.”
+
+According to Bertrand Russell, the reason why it took so long to
+discover a definition of natural numbers was that the natural numbers
+was thought of as the result of counting:
+
+> The philosophy of arithmetic was wrongly conceived by every writer
+> before Frege. The mistake that all of them made was a very natural
+> one. They thought of numbers as resulting from counting, and got into
+> hopeless puzzles because things that are counted as one can equally
+> well be counted as many. p. 53
+
+Consider Frege’s *relativity argument* from his *Grundlagen* \[1884\]:
+
+> “What number is represented by a standard deck of cards?” Excluding
+> jokers, there are 52 playing cards in a complete deck. However, aren’t
+> there other numbers that the deck can represent? There are 13 ordinal
+> card rankings—Aces, deuces, threes, fours, …., tens, Jacks, Queens,
+> Kings. There are 4 suits of cards—hearts, spades, diamonds, and clubs.
+> There are 2 decks one consisting of all the black cards and the other
+> consisting of all the red cards. Or why can’t I simply say there is
+> just 1 complete deck?
+
+So what’s the point? Bertrand Russell explains:
+
+> It is obvious, therefore, that what makes anything one from a point of
+> view of counting is not its physical constitution, but the question,
+> ‘Of what is this an instance?’ The number that you arrive at by
+> counting is the number of some collection, and that collection has
+> whatever number it does have before you count it. It is only *qua*
+> many instances of something that a collection is many. The collection
+> itself will be an instance of something else, and *qua* instance
+> counts as one in enumeration. We are thus forced to face the question,
+> ‘What is a collection?’ and ‘What is an instance?’….
+
+Let’s consider more carefully how children learn to count. One way to
+begin is by teaching the child begins to count the fingers on one hand
+with the numbers 1, 2, 3, 4, 5. At first the child may practice
+enumerating the fingers in exactly the same way, perhaps beginning with
+the pointer finger as 1, the middle finger as 2, and ending with the
+thumb as 5. (There are some interesting cultural differences in the way
+children are taught to count. For example, American children are taught
+to point their fingers while counting, whereas Chinese children are
+typically taught to close their fingers while counting.)
+
+Now ask the child if you’ll get the same result if you count the fingers
+in a *different order*. Does it make a difference whether you count the
+fingers from left to right or right to left? Will you get to the same
+number if you *count* your fingers in any *order* so long as you don’t
+count the same finger twice?
+
+Next the child is taught how to count a set of objects such as the
+following set of symbols:
+
+One way to do this is to pair them one-to-one with the fingers on one
+hand. Here we have the beginnings of the distinction between *order* and
+*size*, between what mathematicians call the *ordinal* numbers (*first,
+second, third*, ….) and what they call the *cardinal* numbers (one, two,
+three, … ). The child discovers that if you can pair the symbols in a
+one-to-one fashion with the fingers on one hand, then there are the
+*same number* of fingers and as are symbols. And as we have already
+discovered there are five fingers on one hand. Hence, there are five
+symbols.
+
+The child may then begin to recognize geometric properties of the
+symbols. The circle can be drawn with s single line. The cross is made
+using two line segments. The triangle has three sides. The square has
+four sides, and the pentagon has five sides. There is a natural way to
+pair the numbers with the shapes, but it turns out that no matter what
+order you count the shapes, so long as each shapes is counted once and
+only once, you will end up counting that there are five shapes.
+
+From this simple example, we can see that numbers are used in two
+different ways—to list the symbols in some *order* and to describe the
+*size* of the set. This is the intuitive difference between *ordinals*
+(numbers used to *order* the collection) and *cardinals* (numbers used
+to assign a *size* to the collection). An *ordinal* number relates to a
+thing’s *position* in a series or sequence—whether it occurs first,
+second, or third in our counting sequence. A *cardinal* number, on the
+other hand, describes the *size* of a set. When we’re done counting or
+enumerating the members of the above set, the last *ordinal* number
+gives us the *cardinal* number of that set of objects.
+
+According to Russell, when you say that a set has three elements, you
+are using “3” as an *adjective* to describe the set as having a certain
+property. In contrast, when you assert that 3 + 5 = 8, you are using “3”
+as a *noun* to refer to a mathematical object, “5” as a noun to refer to
+another mathematical object, and asserting that combining these two
+objects with the operation of addition results in another mathematical
+object, the number 8.
+
+Must the arithmetic for ordinals obey that same laws as those for
+cardinals? Consider, for example, Henry VIII (1491 – 1547), who ruled
+England from 1509 until his death. Did we arrive at Henry VII by taking
+three Henrys and then adding five more:
+
+3 + 5 = 8 .
+
+No, Henry VIII is just one man (although he had six marriages)[12]. What
+we can say using this equation is that Henry VIII was the fifth king
+called Henry after Henry III. You can list your Henrys in the row: if
+you advance three steps along your list and then advance five more that
+the say at going from the first to the eighth position. When you think
+about it this way, it is not immediately evident that addition must be
+commutative. In fact, the arithmetic for infinite ordinals fails to
+follow the rules for finite ordinals.
+
+Addition for ordinals α + β is the result of α followed by β then
+recounting. For example:
+
+2 1 0 4 3 2 1 0
+
+3 + 5 | | | | | | | | = 8
+
+0 1 2 3 4 5 6 7
+
+For finite numbers this operation is commutative:
+
+4 3 2 1 0 2 1 0
+
+5 + 3 | | | | | | | | = 8
+
+0 1 2 3 4 5 6 7
+
+However, this law does not hold for infinite ordinal numbers.
+
+*<u>Digression</u>*: Can infinity be a number? According to David
+Hilbert’s formalist conception of mathematics, a mathematical object
+exists if we can construct a consistent formal system in which infinity
+is treated as a number. Hence, mathematical existence depends, in this
+sense, on logic.
+
+Here’s how to construct an ordinal arithmetic. The first infinite
+ordinal is ω. It is the next ordinal after all of {0, 1, 2, 3, ….}. How
+can we represent this ordinal? One way is to picture them as an infinite
+array of telephone poles that appear shorter and shorter as they
+approach the horizon:
+
+<img src="./attachments/$myfilename/media/image4.jpeg"
+style="width:1.25764in;height:1.08194in"
+alt="Mac HD:Users:gary:Desktop:Unknown.jpeg" />
+
+Let’s see what we get when we compare 1 + ω with ω + 1:
+
+1 + ω = ω ≠ ω + 1
+
+When we renumber the telephone poles on the left, we simply get ω again,
+but we get something structurally different on the right. As we shall
+see, Cantor’s arithmetic of ordinals and cardinals leads to some quite
+beautiful arithmetic truths:
+
+ω + 1 ≠ 1 + ω, 2 × ω = 2ω &lt; ω × 2 = ω + ω, *ω*<sup>*ω*</sup> = 1 +
+*ω*<sup>1</sup>+ *ω*<sup>2</sup>+ *ω*<sup>3</sup> + …,
+
+*ϵ*<sub>0</sub>= 1 +
+*ω*+ *ω*<sup>*ω*</sup>+ *ω*<sup>*ω*<sup>*ω*</sup></sup> + *ω*<sup>*ω*<sup>*ω*<sup>*ω*</sup></sup></sup> +
+…
+= *ω*<sup>*ω*<sup>*ω*<sup>*ω*<sup>.<sup>.<sup>.</sup></sup></sup></sup></sup></sup>
+
+End of disgression.
+
+Kronecker famously said that God created the natural numbers, and
+mankind created the rest. If Kronecker was willing to leave the creation
+of the natural numbers to God, Frege was not. Frege was intent on taking
+the foundation project even further back. Frege’s idea is to construct a
+set-theoretical object that provably satisfies the Peano A*x*ioms. If
+this construction can be accomplished and the Peano Axioms derived as
+theorems, then all the arithmetical consequences of the Peano Axioms
+will have been deduced from, and reduced to, logic together with set
+theory.
+
+The Italian mathematician Giuseppe Peano (1858 – 1932) advanced the
+algebraic period of mathematical logic through his axiomatization of the
+natural numbers including the method of mathematical induction (which
+are known, in his honor, as Peano’s postulates) through his *Formulario*
+Project (1891) and his in *Notations de Logique* (1894). Boole’s and
+Peano’s work, along with that of the American pragmatist C. S. Pierce
+(1839 – 1914) and the German mathematician and logician Ernst Schröder
+(1841 – 1902), advanced logic from is adolescent algebraic period to the
+more mature period of modern symbolic logic at the dawn of
+20<sup>th</sup> century.
+
+At the dawn of the 20<sup>th</sup> century in 1900, Bertrand Russell
+(1872 - 1970) attended the first International Congress of Philosophy in
+Paris where he became acquainted with the notation of Peano. In *My
+Philosophical Development* \[1959\] Russell writes about the revelation
+inspired Peano’s notation:
+
+> It was at the International Congress of Philosophy in Paris in the
+> year 1900 that I became aware of the importance of logical reform for
+> the philosophy of mathematics. It was through hearing discussion
+> between Peano and Turin and the other assembled philosophers that I
+> became aware of this. I had not previously known his work, but I was
+> impressed by the fact that, in every discussion, he showed more
+> precision and more logical rigour than was shown by anybody else. I
+> went to him and said, ‘I wish to read all your works. Have you got
+> copies with you?’ He had, and I immediately read them all. It was they
+> that gave the impetus to my own views on the principles of
+> mathematics….
+
+The enlightenment that I derived from Peano came mainly from two purely
+technical advances of which it is very difficult to appreciate the
+importance unless one had (as I had) spent years in trying to understand
+arithmetic. Both these advances had been made at an earlier date by
+Frege, but I doubt whether Peano knew this.… \[pp. 51-2\]
+
+*Peano’s Planets.* Once upon a time, there was a universe of planets
+called *Omega* ω. Each of the planets in *Omega* gives birth to another
+planet called the child of that planet. Symbolize the following
+planetary postulates using the dictionary provided:
+
+> P<sub>1</sub>. The *null planet* is in ω.
+>
+> P<sub>2</sub>. Every planet in ω has a (unique) *child*.
+>
+> P<sub>3</sub>. The null planet is not the *child* of any planet.
+>
+> P<sub>4</sub>. No two planets have the same child.
+>
+> P<sub>5</sub>. For every set of planets Σ, if
+
+1.  the null planet is in Σ and
+
+2.  for every planet in Σ its child is in Σ,
+
+> then every planet is in Σ (i.e., ω ⊆ Σ).
+
+Dictionary:
+
+0 : the null planet
+
+> ω : the universe of planets
+>
+> *x* ∈ ω : *x* is a planet in Omega
+
+S(*x*) : the child of *x*
+
+> *x* = *y*: *x* is identical as *y, i.e., x* and *y* are the same
+> planet
+>
+> *x* ≠ *y*: *x* is not identical to *y, i.e., x* and *y* are different
+> planets
+
+A ⊆ B: A is a subset of B
+
+As you have probably guessed, these planetary postulates are Peano’s
+postulate for the natural numbers:
+
+P<sub>1</sub>: 0 is a natural number
+
+P<sub>2</sub>: If *x* is a natural number, so is the successor of *x*.
+
+P<sub>3</sub>. For any natural number *x*, 0 is not the successor of
+*x*.
+
+P4. No two distinct natural numbers have the same successor.
+
+P<sub>5</sub>. *Principle of Mathematical Induction*: For any set Σ, if
+
+1.  0 is a member of Σ,
+
+2.  for every natural number *x*, *x* is a member of Σ then the
+    successor of *x* is a member of Σ,
+
+> then all natural numbers are in Σ.
+
+Our next task is to derive the Peano’s Postulates as *theorems* of our
+Fregean foundational system. Here is a list of the Peano’s Postulates
+(we use “numbers” to mean “natural numbers”).
+
+<table>
+<colgroup>
+<col style="width: 48%" />
+<col style="width: 43%" />
+<col style="width: 8%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>P<sub>1</sub>. Zero is a number.</th>
+<th>0 ∈ <strong>N</strong></th>
+<th>T122</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>P<sub>2</sub>. The successor of a number is a number.</td>
+<td>∀<em>x</em>(<em>x</em> ∈ <strong>N</strong>→ S(<em>x</em>) ∈
+<strong>N</strong>)</td>
+<td>T123</td>
+</tr>
+<tr class="even">
+<td>P<sub>3</sub>. Zero is not the successor of any number.</td>
+<td>∀<em>x</em>(<em>x</em> ∈ <strong>N</strong> → 0 ≠
+S(<em>x</em>))</td>
+<td>T125</td>
+</tr>
+<tr class="odd">
+<td>P<sub>4</sub>. No two numbers have the same successors.</td>
+<td>∀<em>x</em>∀<em>y</em>[<em>x</em> ∈ <strong>N</strong>∧<em>y</em> ∈
+<strong>N</strong>∧<em>x</em> ≠ <em>y</em> →
+S(<em>x</em>)≠S(<em>y</em>)]</td>
+<td>T124</td>
+</tr>
+<tr class="even">
+<td>P<sub>5</sub>. If zero has F and the successor of <em>x</em> has F
+whenever <em>x</em> has F, then all numbers have F.</td>
+<td>[F0 ∧ ∀<em>x</em>(F<em>x</em>→FS(<em>x</em>))] →
+∀<em>x</em>(<em>x</em> ∈ <strong>N</strong>→F<em>x</em>)</td>
+<td>TS121</td>
+</tr>
+</tbody>
+</table>
+
+Peano’s postulates were first published in 1889, but an instructive
+discussion of the postulates was discovered in an 1890 letter by
+Dedekind. This letter was first translated and published in 1957[13] by
+Hao Wang. Dedekind calls such anomalies as the Quixotic planets “alien
+intruders”:
+
+> The postulates “are still far from being adequate for completely
+> characterizing the nature of the number sequence *N*… What, then, must
+> we add to the facts above in order to cleanse our system … again of
+> such alien intruders … as disturb every vestige of order and to
+> restrict it to *N*?”
+
+We can ask some questions about the kind of structure Peano’s postulates
+impose upon our universe.
+
+1.  Must Omega ω have an infinite number of planets?
+
+2.  According to ancient Omegan mythology, there is an alien planet Q
+    (known as a *Quixotic* planet) that was *created after* (in symbols,
+    &gt;) the null planet or any of its *descendants* (we may define
+    inductively the notion of a *descendant* of a planet to be either
+    the child of that planet or any child of a descendant):
+
+{Q &gt; \[0\], Q &gt; \[1\], Q &gt; \[2\], Q &gt; \[3\], …}
+
+Is such a mythological *Quixotic* universe *consistent* with the Peano
+planetary postulates?
+
+1.  (Larson’s Question) Planets are *created before* (in symbols, α &lt;
+    β) and *created after* (in symbols, α &gt; β) each other. Suppose we
+    add a new postulate that says that any two planets in Omega are
+    *comparable* with respect to creation: for any two planets α and β
+    (in symbols, α ≠ β) either α was *created before* β or β was
+    *created after* α. We can express comparability as follows:
+
+α ≠ β → (α &lt; β) ∨ (β &gt; α) .
+
+Does adding this postulate of *comparability* rule out the existence of
+*alien intruders*? (These alien intruders have the form of Z-chains or
+*n*-cycles).
+
+Frege’s goal is to logically construct the natural numbers in set theory
+so that the Peano postulates are derivable as theorems. Kronecker
+famously said that God created the natural numbers, and man created the
+rest. If Kronecker was willing to leave the creation of the natural
+numbers to God, Frege was not. Frege was intent on taking the foundation
+projects even further back. Frege’s idea is to construct a
+set-theoretical object that provably satisfies the Peano A*x*ioms. If
+this construction can be accomplished and the Peano Axioms derived as
+theorems, then all the arithmetical consequences of the Peano Axioms
+will have been deduced from, and reduced to, logic together with set
+theory.
+
+***Definition***: {ξ} := {*x* | *x* = ξ}, where ξ is any term and *x* is
+a variable not occurring in ξ.
+
+(The *singleton* set {ξ} is defined as a set consisting of ξ alone.)
+
+Next we define *zero* to be the empty set. Here rather than follow
+Frege’s and Russell’s logical construction, which defines the number 3
+to be the *class* of all sets which have three elements, we shall follow
+von Neumann’s idea of defined the number 3 to be a particular three
+element *set*. It is more elegant to have numbers as sets within our
+Fregean foundational system.
+
+***Definition***. 0 := ∅
+
+Next we define the *successor* of a set α (in symbols, α<sup>+</sup>) to
+be the set consisting of α ∪ {α}.
+
+***Definition***. For any set α, S(α) = α ∪ {α}.
+
+Alonzo Church was one of the great logicians of the 20<sup>th</sup>
+century. When Church used to count the number of handouts to pass down a
+row with seven students, he could say, “zero, one, two, three, four,
+five, six and that makes seven” and then put down seven pieces of paper.
+When you count Church’s way, then the *number* of objects you’ve counted
+is the earliest number that you *didn’t* use. In Church’s system when
+you count an empty set of things you arrive at the number zero since it
+is the first number you didn’t use (since you didn’t use any). Although
+this procedure might seem odd, it is really very natural for some
+purposes. If you order 1000 lottery tickets, there usually numbered from
+000 to 999.
+
+> A physicist, a biologist and a mathematician are sitting in a street
+> café watching people entering and leaving the house on the other side
+> of the street. First they see two people entering the house. Time
+> passes. After a while they notice three people leaving the house. The
+> physicist says, "The measurement wasn't accurate." The biologist says,
+> "They must have reproduced." The mathematician says, "If one more
+> person enters the house then it will be empty."[14]
+
+Many logicians prefer to count objects starting with zero rather than
+one since that is the natural way to logically construct the ordinal
+numbers. Von Neumann’s elegant idea was that each ordinal can be defined
+as the well-ordered set of all previous ordinals.
+
+<table>
+<colgroup>
+<col style="width: 4%" />
+<col style="width: 25%" />
+<col style="width: 70%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>0</td>
+<td></td>
+<td>= Ø</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>= { 0 }</td>
+<td>= {Ø}</td>
+</tr>
+<tr class="odd">
+<td>2</td>
+<td>= { 0, 1 }</td>
+<td>= { Ø, {Ø} }</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>= { 0, 1, 2 }</td>
+<td>= { Ø, {Ø} , {Ø, {Ø}} }</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>= { 0, 1, 2, 3 }</td>
+<td>= { Ø, {Ø}, {Ø, {Ø}}, {Ø, {Ø}, {Ø, {Ø}}} }</td>
+</tr>
+</tbody>
+</table>
+
+Unlike Zermelo’s construction in which 3 = {{{0}}}, von Neumann’s idea
+generalized to infinite ordinals.
+
+We define an *inductive set* to be a set that contains 0 and the
+successors of all its members.
+
+***Definition***. I*y* ↔ \[0 ∈ *y* ∧ ∀*z*(*z* ∈ *y* → S(*z*) ∈ *y*)\],
+where *y* and *z* are distinct variables.
+
+Next we defined the “natural numbers” to be in the intersection of every
+inductive set.
+
+***Definition***. **N** := {*x*| ∀*y*(I*y* → *x* ∈ *y*)}.
+
+V is an inductive set. To prove that zero is a natural number, we show
+that zero is a member of every inductive set, which is obvious by
+construction.
+
+***  
+***
+
+***Theorem*** 6. 0 ∈ **N** (Peano Postulate P<sub>1</sub>.)
+
+1\. *<s>Show</s>* 0 ∈ **N** 13, DD
+
+2\. ∀*x* \[*x* ∈ **N** ↔ *x* ∈ {*x*|∀*y*(I*y* → *x* ∈ *y*)}\]
+Abstraction, Def. **N**  
+3. 0 ∈ **N** ↔ 0 ∈ {*x*|∀*y*(I*y* → *x* ∈ *y*)} 2, UI
+
+4\. *<s>Show</s>* 0 ∈ {*x*|∀*y*(I*y* → *x* ∈ *y*)} 12, DD
+
+5\. 0 ∈{*x*|∀*y*(I*y* → *x* ∈ *y*)} ↔ ∀*y*(I*y* → 0 ∈ *y*) Abstraction
+
+6\. *<s>Show</s>* ∀*y*(I*y* → 0 ∈ *y*) 7, UD
+
+7\. *<s>Show</s>* I*y* → 0 ∈ *y* 11, CD
+
+8\. I*y* Assume (CD)
+
+9*.* I*y* ↔ 0 ∈ *y* ∧ ∀*z*(*z* ∈ *y* → S(*z*) ∈ *y*) Def, Inductive Sets
+
+10\. 0 ∈ *y* ∧ ∀*z*(*z* ∈ *y* → S(*z*) ∈ *y*) 9, BC, 8 MP
+
+11\. 0 ∈ *y* 10, S
+
+12\. 0 ∈{*x*|∀*y*(I*y* → *x* ∈ *y*)} 5, BC, 6 MP
+
+13\. 0 ∈ **N** 2, BC, 4 MP
+
+Next we prove that the successor of a natural number is a natural
+number, which is also obvious.
+
+***  
+***
+
+***Theorem*** 7. ∀*x*(*x* ∈ **N**→ S(*x*) ∈ **N**) (Peano Postulate
+P<sub>2</sub>)
+
+1\. *<s>Show</s>* ∀*x*(*x* ∈ **N**→ S(*x*) ∈ **N**) 2, UD
+
+2\. *<s>Show</s>* *x* ∈ **N** → S(*x*) ∈ **N** 20, CD
+
+3\. *x* ∈ **N** Assume (CD)
+
+4\. ∀*x* \[*x* ∈ **N** ↔ *x* ∈ {*x*|∀*y*(I*y* → *x* ∈ *y*)}\]
+Abstraction, Def. **N**  
+5. *x* ∈ **N** ↔ *x* ∈ {*x*|∀*y*(I*y* → *x* ∈ *y*)} 4, UI
+
+6\. *x* ∈ {*x*|∀*y*(I*y* → *x* ∈ *y*)} 5, BC, 3, MP
+
+7\. *x* ∈ {*x*|∀*y*(I*y* → *x* ∈ *y*)} ↔ ∀*y*(I*y* → *x* ∈ *y*)
+Abstraction
+
+8\. ∀*y*(I*y* → *x* ∈ *y*) 7, BC, 6, MP
+
+9\. S(*x*) ∈ **N** ↔ ∀*y*(I*y* → S(*x*) ∈ *y*) 4, UI
+
+10\. *<s>Show</s>* ∀*y*(I*y* → S(*x*) ∈ *y*) 11, UD
+
+11\. *<s>Show</s>* I*y* → S(*x*) ∈ *y* 19, CD
+
+12\. I*y* Assume (CD)
+
+13\. I*y* → *x* ∈ *y* 8, UI
+
+14\. *x* ∈ *y* 13, 12 MP
+
+15\. I*y* ↔ \[0 ∈ *y* ∧ ∀*z*(*z* ∈ *y* → S(*z*) ∈ *y*)\] Def. I*y*
+
+16\. 0 ∈ *y* ∧ ∀*z*(*z* ∈ *y* → S(*z*) ∈ *y*) 15, BC, 12 MP
+
+17\. ∀*z*(*z* ∈ *y* → S(*z*) ∈ *y*) 16, S
+
+18\. *x* ∈ *y* → S(*x*) ∈ *y* 17, UI
+
+19\. S(*x*) ∈ *y* 18, 14, MP
+
+20\. S(*x*) ∈ **N** 9, BC, 10 MP
+
+Lemma: ∀*x*(*x* ∈ **N ∧** 0 ≠ *x* → 0 ∈ *x*)
+
+The third Peano Postulate states that zero is not a successor. Suppose
+zero were the successor of some natural number *x*. Then zero would have
+*x* as a member and so would not be empty.
+
+***Theorem*** 8. ∀*x*(*x* ∈ **N** → 0 ≠ S(*x*)) (Peano Postulate
+P<sub>3</sub>)
+
+1\. *<s>Show</s>* ∀*x*(*x* ∈ **N** → 0 ≠ S(*x*)) 2, UD
+
+2\. *<s>Show</s>* *x* ∈ **N** → 0 ≠ S(*x*) 4, CD
+
+3\. *x* ∈ **N** Assume (CD)
+
+4\. *<s>Show</s>* 0 ≠ S(*x*) 14, 17 ID
+
+5\. 0 = S(*x*) Assume (ID)
+
+6\. 0 = S(*x*) ↔ ∀*y*(*y* ∈ 0 ↔ *y* ∈ S(*x*)) Extensionality
+
+7\. ∀*y*(*y* ∈ 0 ↔ *y* ∈ S(*x*)) 6,BC, 5, MP
+
+8\. 0 ∈ 0 ↔ 0 ∈ S(*x*) 7, UI
+
+9\. 0 ∉ 0 Thm 3, UI
+
+10\. 0 ∉ S(*x*) 8, BC, 9, MT
+
+11\. 0 ∉ *x* ∪ {*x*} 10, Def. *x*<sup>+</sup>
+
+12\. ~(0 ∈ *x* ∨ 0 = *x*) 11, Def. ∪
+
+13\. 0 ∉ *x* ∧ 0 ≠ *x* 12, DM
+
+14\. 0 ∉ *x* 13, S
+
+15\. ∀*x*(*x* ∈ **N ∧** 0 ≠ *x* → 0 ∈ *x*) Lemma
+
+16\. *x* ∈ **N ∧** 0 ≠ *x* → 0 ∈ *x* 15, UI
+
+17\. 0 ∈ *x* 3, 13, S, ADJ, MP
+
+Our next theorem is the Peano Postulate stating the schema for
+mathematical deduction: if zero has the property F and whenever a
+natural number has the property F its successor has the property F, then
+all natural numbers have the property F. This property of the natural
+numbers is also obvious given that the natural numbers are a member of
+every inductive set. The von Neumann construction makes it easy to
+define &lt; as set membership ∈, which allow us to state a strong form
+of induction. Strong induction is equivalent to the Least Number
+Principle and Fermat’s Method of Proof by Infinite Descent:
+
+<img src="./attachments/$myfilename/media/image5.emf"
+style="width:6.00694in;height:2.43056in"
+alt="Mathematical Induction Chart.pdf" />
+
+TS121 (Weak) Mathematical Induction: \[F0 ∧ ∀*x*(F*x* → FS(*x*))\] →
+∀*x*(*x* ∈ **N** → F*x*)
+
+TS121 Strong Mathematical Induction: ∀*x*\[*x* ∈ **N** ∧ ∀*y* \[*y* ∈
+**N** ∧ *y* &lt; *x* → F(*y*)\] → F(*x*)\] → ∀*x*\[*x* ∈ **N** → F*x* \]
+
+TS119 Least Number Principle: ∃*x*\[F(*x*) ∧ ∀*y*\[F(*y*) → N(*y*)\] →
+∃*z*(F(*z*) ∧ ∀*y*\[F(*y*) → *y* <u>&lt;</u> *z*\])
+
+Fermat’s Proof by Infinite Descent: ∀*x*\[N(*x*) ∧ F(*x*) → ∃*y*\[N(*y*)
+∧ *y* &lt; *x* ∧ F(*y*)\] → ∀*x*\[N(*x*) → ~F(*x*)\]
+
+<span class="smallcaps">Exercise:</span> Show the equivalence of all
+these variations of the principle of induction.
+
+***Theorem*** 10. \[F0 ∧ ∀*x*(F*x* → FS(*x*))\] → ∀*x*(*x* ∈ **N** →
+F*x*) (P<sub>5</sub> Mathematical Induction)
+
+1\. *<s>Show</s>* F0 ∧ ∀*x*(F*x* → FS(*x*)) → ∀*x*(*x* ∈ **N** → F*x*)
+5, CD
+
+2\. F0 ∧ ∀*x*(F*x* → FS(*x*)) Assume (CD)
+
+3\. F0 2, S
+
+4\. ∀*x*(F*x* → FS(*x*)) 2, S
+
+5\. *<s>Show</s>* ∀*x*(*x* ∈ **N** → F*x*) 6, UD
+
+6\. *<s>Show</s>* *x* ∈ **N** → F*x* 30, CD
+
+7\. *x* ∈ **N** Assume (CD)
+
+8\. *x* ∈ **N** ↔ ∀*y*(I*y* → *x* ∈ *y*) Def. **N**
+
+9\. ∀*y*(I*y* → *x* ∈ *y*) 8, BC, 7 MP
+
+10\. *<s>Show</s>* F*x* 30, DD
+
+11\. *<s>Show</s>* I{*x*|F*x*} 26, DD
+
+12\. I{*x*|F*x*} ↔ \[0 ∈ {*x*|F*x*} ∧ ∀*z*(*z* ∈ {*x*|F*x*} → S(*z*) ∈
+{*x*|F*x*})\] Def. I*y*
+
+13\. *<s>Show</s>* 0 ∈ {*x*|F*x*} 15, DD
+
+14\. F0 ↔ 0 ∈ {*x*|F*x*} Abstraction
+
+15\. 0 ∈ {*x*|F*x*} 14, BC, 3, MP
+
+16\. *<s>Show</s>* ∀*z*(*z* ∈ {*x*|F*x*} → S(*z*) ∈ {*x*|F*x*}) 17, UD
+
+17\. *<s>Show</s>* *z* ∈ {*x*|F*x*} → S(*z*) ∈ {*x*|F*x*} 24, CD
+
+18\. *z* ∈ {*x*|F*x*} Assume (CD)
+
+19\. *z* ∈ {*x*|F*x*} ↔ F*z* Abstraction
+
+20\. F*z* 19, BC, 18, MP
+
+21\. F*z* → FS(*z*) 4, UI
+
+22\. FS(*z*) 20, 21 MP
+
+23\. S(*z*) ∈ {*x*|F*x*} ↔ FS(*z*) Abstraction*,* UI
+
+24\. S(*z*) ∈ {*x*|F*x*} 23, BC, 22, MP
+
+25\. 0 ∈ {*x*|F*x*} ∧ ∀*z*(*z* ∈ {*x*|F*x*} → S(*z*) ∈ {*x*|F*x*}) 13,
+16, ADJ
+
+26\. I{*x*|F*x*} 12, BC, 25, MP
+
+27\. I{*x*|F*x*} → *x* ∈ {*x*|F*x*} 9, UI
+
+28\. *x* ∈ {*x*|F*x*} 27, 11 MP
+
+29\. *x* ∈ {*x*|F*x*} ↔ F*x* Abstraction, UI
+
+30\. F*x* 29, BC, 28, MP
+
+<span class="smallcaps">Exercise</span>. Prove Peano Postulate IV, which
+states that no two natural numbers have the same successors.
+
+***Theorem*** 9. ∀*x*∀*y*(*x* ∈ **N** ∧ *y* ∈ **N** ∧ *x* ≠ *y* → S(*x*)
+≠ S(*y*)).
+
+This theorem is equivalent to
+
+∀*x*∀*y*(*x* ∈ **N** ∧ *y* ∈ **N** ∧ S(*x*) = S(*y*) → *x* = *y*).
+
+***Definition***. A set or class A is *transitive* if every element of A
+is itself a class of elements of A
+
+∀*x*∀*y*(*x* ∈ *y* ∧ *y* ∈ A → *x* ∈ A).
+
+***Theorem***: The following conditions are equivalent:
+
+1.  ∪α ⊆ α
+
+2.  α ⊆ P(α)
+
+3.  α is transitive
+
+## Numerals, Finite and Infinite Sets
+
+The standard *numerals* can be introduced as successive applications the
+successor operation to zero. Here \[*n*\] is the numeral corresponding
+to the number *n*, and S*<sup>n</sup>* is an abbreviation for applying
+the successor operation *n* times.
+
+***Definition***. \[1\] := S(0); \[2\] := S(1), \[3\] := S(2); \[4\] :=
+S(3); \[5\] := S(4), …, \[*n*\] := S*<sup>n</sup>*(0)
+
+We can now define finite and infinite sets. A set is finite if and only
+if it is an element of a natural number, and the set is infinite if and
+only if it is not finite.
+
+***Definition***. <span class="smallcaps">Fin</span>(α) := ∃*x*(*x* ∈
+**N** ∧ α ∈ *x*), where α is any term in which the variable *x* does not
+occur.
+
+***Definition***. <span class="smallcaps">Inf</span>(α) :=
+~<span class="smallcaps">Fin</span>(α), where α is any term.
+
+What can be said for our Fregean foundational system that we have
+developed thus far? First, our foundational system has been expressed as
+a formal system and it has been adequate to prove a reasonably large
+portion of mathematics. We can subsume both Aristotle’s syllogistic
+logic and Boolean algebra. Secondly, the foundation has been derives
+from some intuitively natural principles. It seems intuitively true that
+a property can be used to define the set of all things having the given
+property, so long as that property is restricted to those that can be
+expressed in our formal language. Thirdly, our basic principles have
+been economical. We have only two basic postulates for set theory and
+our underlying system of natural deduction has allowed us to derive
+relatively complex theorems in a systematic and orderly manner.
+
+There is however a fundamental problem: our Fregean foundational system
+is quite inconsistent.
+
+## Russell’s Paradox
+
+Russell's paradox, perhaps the most famous of all the set-theoretical
+paradoxes, destroyed Frege’s dream of completing his logicist project.
+And it couldn’t have come as a more disappointing time. Just as the
+second volume of Frege’s *Gründgesetze* was in the press, Frege received
+a devastating letter from Bertrand Russell in which he derived a
+contradiction from his Basic Law V, a principle from which our Fregean
+abstraction principle can be derived.
+
+> Basic Law V: {*x*|*f*(*x*)} = {*x*|*g*(*x*)} ↔ ∀*x*(*f*(*x*) ↔
+> *g*(*x*))
+
+Facing with the inconsistency posed by Russell’s paradox for his
+foundational system, Frege reacted with unflinching scientific
+integrity:
+
+Frege’s conception of his work in logic is most grandly and eloquently
+expressed in an essay written at the end of academic career, “*The
+Thought: A Logical Inquiry*” (1918), in which he talks about the science
+of logic, not aiming at the laws of *thought*, but at the laws of
+*truth*. This vision is expressed in the quotation that introduces this
+chapter.
+
+Although expressed eloquently, Frege’s hopes for his logicist project of
+reducing arithmetic to logic had foundered on Russell’s famous paradox.
+On the eve of the publication of the second volume of his *Grundgesetze*
+\[1903\], Frege received a fateful letter from Russell, which posed his
+famous paradox. Frege immediately reproduced Russell’s paradox in his
+notation and then hastily composed an appendix to his life’s work. It is
+clear that Frege had the intellectual honesty to acknowledge that
+Russell’s paradox threatened the consistency, and hence the validity and
+value, of his entire life’s work. Here are Frege’s words:
+
+> Hardly anything more unwelcome can befall a scientific writer than
+> that one of the foundations of his edifice be shaken after the work is
+> finished. I have been placed in this position by a letter of Mr.
+> Bertrand Russell just as the printing of this \[second\] volume was
+> nearing completion. It is a matter of my Basic Law V \[i.e., the
+> abstraction principle\]. I have never concealed from myself its lack
+> of the self-evidence which the others possess, and which must properly
+> be demanded of a law of logic.
+
+Frege died thinking that his life project had ended in failure. Anthony
+Kenny compares Frege’s career to that of Christopher Columbus.
+
+> Just as Columbus failed in his project of discovering a westward
+> passage to India, but unknowingly make Europe acquainted with a whole
+> new continent, so Frege failed in his task of deriving arithmetic from
+> logic but made discoveries in logic and advances in philosophy which
+> permanently changed the whole map of both subjects. Like Columbus,
+> Frege failed to appreciate the full value of his own genuine
+> discoveries, and he suffered discouragement and depression in
+> consequence.
+>
+> Frege devoted the best years of his life to proving the continuity
+> between arithmetic and logic. All the other innovations of his fertile
+> mind were intended to serve that overarching purpose and when the
+> project aborted it was natural that he should be tempted to think that
+> his life’s work had been a failure.[15]
+
+Frege’s tried, hastily, to try to repair is system, but his repairs
+failed. Why was the derivation of Russell’s paradox so devastating? As
+the Cambridge mathematician G. H. Hardy wrote in *A Mathematician’s
+Apology* \[1967\], a classic defense of the mathematician’s and
+logician’s life’s work, reasoning by *reductio ad absurdum* is a
+dangerous game to play.
+
+> “The proof \[of the infinity of primes\] is by *reductio ad absurdum*,
+> and *reductio ad absurdum*, which Euclid loved so much, is one of the
+> mathematician’s finest weapons. It is a far finer gambit than any
+> chess gambit: a chess player may offer the sacrifice of a pawn or even
+> a piece, but a mathematician offers the game.”
+
+The mathematician “offers the game” because a contradiction, in
+classical logic, allows anything whatsoever to be deduced. The
+derivation of Russell’s paradox, a contradiction, threatened the entire
+foundation for Frege’s mathematical work.
+
+When asked to donate his correspondence with Frege to the now classic
+source book in mathematical logic *From Frege to Gödel* edited by Jean
+van Heijenoort, Russell wrote:
+
+> Dear Professor van Heijenoort,
+
+I should be most pleased if you would publish the correspondence between
+Frege and myself, and I am grateful to you for suggesting this. As I
+think about acts of integrity and grace, I realize that there is nothing
+in my knowledge to compare with Frege’s dedication to the truth. His
+entire life’s work was on the verge of completion, much of his work has
+been ignored to the benefit of men infinitely less capable, his second
+volume was about to be published, and upon finding that his fundamental
+assumption was in error, he responded with intellectual pleasure clearly
+submerging any feelings of personal disappointment. It was almost
+superhuman and a telling indication of that of which men are capable if
+their dedication is to creative work and knowledge instead of cruder
+efforts to dominate and be known.
+
+> Yours sincerely,
+>
+> Bertrand Russell
+
+What is Russell’s paradox? It is customary to introduce the paradox with
+logically similar pseudo-paradox of the barber. In the village of
+Alcala, there is a barber who shave all the only those who do not shave
+themselves. Who shaves the barber?
+
+If suppose the barber shaves himself (or herself), then s/he does not
+*only* those who do not shave themselves. If we suppose the barber does
+not shave him or herself, then s/he does not shave *all* those who do
+not shave themselves. We can conclude there can be no such barber.
+
+Russell’s paradox, unlike the pseudo-paradox of the barber, is
+considered to be an *antinomy* (from *anti* (against) + *nomos* (law))
+because the existence of the Russell set seems to be guaranteed by
+intuitive laws for the existence of sets. As Gödel wrote in his essay on
+“Russell’s Mathematical Logic” \[1944\], the significance of Russell’s
+paradox is this:
+
+> “By analyzing the paradoxes to which Cantor’s set theory had led, he
+> freed them from all mathematical technicalities, thus bringing to
+> light the amazing fact that our logical intuitions (i.e., intuitions
+> concerning such notions as: truth, concept, being, class, etc. are
+> self-contradictory.” (p. 452, Benacerraf & Putnam)
+
+Russell’s paradox can be intuitively sketched as follows. As we have
+seen, some set contain themselves as elements, such as the universal set
+V. However, most sets do not contain themselves as elements, e.g., such
+as the set of natural numbers is not a natural number and so is not a
+member of itself. Color all the sets that do contain themselves as
+members green and all the sets that do not contain themselves as members
+red. Now consider the collection R of all and only red sets. If R
+colored red or green? If it is colored red, then since R contains all
+the red sets, R is a member of R and so must be colored green. However,
+if R is colored green, then it must be a member of itself, but then it
+must be red because R contains only red sets.
+
+Here are the formal derivations in our Fregean foundational system.
+
+***Theorem*** 11. {*x*| *x* ∉ *x*} ∉ {*x* | *x* ∉ *x*} (i.e., R = {*x*|
+*x* ∉ *x*} is not a member of itself).
+
+1\. *<s>Show</s>* {*x*| *x* ∉ *x*} ∉ {*x* | *x* ∉ *x*} 2, 4 ID
+
+2\. {*x*| *x* ∉ *x*} ∈ {*x*| *x*∉*x*} Assume (ID)
+
+3\. {*x*| *x* ∉ *x* }∈ {*x*|*x*∉*x*} ↔ {*x*|*x* ∉ *x*} ∉ {*x*|*x*∉*x*}
+Abstraction
+
+4\. {*x*| *x* ∉ *x*} ∉ {*x*| *x*∉*x*} 3, BC, 2, MP
+
+***Theorem*** 12. {*x*|*x* ∉ *x*} ∈ {*x*| *x*∉*x*} (i.e., R = {*x*| *x*
+∉ *x*} is a member of itself). We leave as an exercise.
+
+Frege’s foundation for arithmetic was based on the faulty intuition was
+that for any property, there is the corresponding set of all and only
+those things that have the property. This is called the *naïve
+comprehension axiom* (naïve because we now know it to be too simple to
+be true).
+
+We can express the logic that generates Russell’s paradox as well as
+Russell’s pseudo-paradox of the village barber of Alcala who shaves all
+and only those in the village who don’t shaves themselves in a theorem
+known as <span class="smallcaps">Russell’s Law</span>.
+
+T269 ~∃*y*∀*x*(R*xy* ↔ ~R*xx*)
+
+For various interpretation of the relation R, we obtain a variety of
+paradoxes. When R is interpreted as “*x* shaves *y*” we obtain the
+Barber Paradox, when it is interpreted as “*x* ∈ *y*” we obtain
+Russell’s paradox, and when it is interpreted as “*x* is true of *y*” we
+obtain the heterological paradox.
+
+We can even formulate a second-order version of Russell’s Law as
+follows:
+
+T275'    ~∃F\[F*y* ∧ ∀*x*(F*x *→ \[R*xy* ↔ ~R*xx*\])\]
+
+This generalization proves the non-existence of any subset formed using
+the Russell property and the *Aussorderungs* Axiom or Axiom of
+Specification which treatz V as a second-order variable for a universal
+derivation.
+
+Paul Halmos in his classic *Naive Set Theory* (New York: Van Nostrand,
+1960, pp. 6‐7) states the point of Russell’s paradox with flair:
+
+> We have proved, in other words, that *nothing contains everything,*
+> or, more spectacularly,
+>
+> *there is no universe* .
+>
+> “Universe” here is used in the sense of “universe of discourse,”
+> meaning in any particular discussion, a set that contains all the
+> objects that enter into that discussion.
+>
+> In older (pre‐axiomatic) approaches to set theory, the existence of a
+> universe was taken for granted, and the argument in the preceding
+> paragraph was known as Russell’s paradox. The moral is that it is
+> impossible, especially in mathematics, to get something for nothing.
+> To specify a set, it is not enough to pronounce some magic words
+> (which may form a sentence such as “*x* ∉ *x*”): it is necessary also
+> to have at hand a set to whose elements the magic words apply.
+
+Halmos’s moral can be summarized in a theorem:
+
+> T270 ∀*z*∃*y*∀*x*\[*x*∈*y*↔(*x*∈*z*∧*x*∉*x*)\] →  ∼ ∃*w*∀*x*(*x*∈*w*)
+
+This theorem states that if for any set, there is a Russellian set
+defined on that set, then there is no universal set.
+
+An indirect disproof of the existence of a universal set V = {*x*| *x* =
+*x* } is as follow. Suppose V exists, then y the *Aussorderungs* Axiom,
+we have the set
+
+R = {*x* ∈ V| *x* ∉ *x* } .
+
+Then by the Axiom of Extensionality, we have that
+
+∀*x* (*x* ∈ R ↔ *x* ∈ V ∧ *x* ∉ *x*) ,
+
+from which we may derive Russell’s Paradox.
+
+1\. *<s>Show</s>* V = <span class="smallcaps">{</span>*x*: *x* = *x*}
+does not exist. 5, 12 ID
+
+2\. V = <span class="smallcaps">{</span>*x*| *x* = *x* } exists Assume
+(ID)
+
+3\. R = {*x* ∈ V| *x* ∉ *x*} exists Axiom of Specification
+
+4\. ∀*x* (*x* ∈ R ↔ *x* ∈ V ∧ *x* ∉ *x*) Axiom of Extensionality
+
+5\. *<s>Show</s>* R ∉ R 6, 8 ID
+
+6\. R ∈ R Assume (ID)
+
+7\. R ∈ V ∧ R ∉ R 4, UI, BC, 6, MP
+
+8\. R∉R 7 S
+
+9\. R = R Aristotle’s Law of Identity
+
+10\. R ∈ V 9, Axiom of Extensionality, BC, 9, MP
+
+11\. R ∈ V ∧ R ∉ R 10, 5, ADJ
+
+12\. R ∈ R 11, Axiom of Specification
+
+Almost every conceivable step of Russell’s paradox has been questioned.
+Here is a representative list of five ways out of the contradiction.
+
+1.  *Revising Syntax*: Russell’s Simple Theory of Types assigns types to
+    all the terms of the language. It makes expressions of the form
+
+*x* ∈ *x*
+
+not grammatically well-formed unless the type of the variable on the
+right is one higher than the type of the variable on the left:
+
+*x<sub>n</sub>* ∈ *x<sub>n+1</sub>*
+
+This restriction on the syntax makes it impossible to *formulate*
+Russell’s paradox, but does it *explain* the paradox?
+
+1.  *Revising Classical Logic*: Another tact is to cripple the logic.
+    *Intuitionistic logic*, for example, restricts the structural rules
+    of classical logic so that it is not possible to derive a
+    contradiction using the two conditionals:
+
+*x* ∈ *x* → *x* ∉ *x*
+
+*x* ∉ *x* → *x* ∈ *x* .
+
+This restriction on the logic of paradox makes it impossible to
+*deducee* Russell’s paradox, but does it *explain* the paradox? Another
+approach is to adopt a *relevance* logic in which a contradiction does
+not imply everything and hence produces a *para-consistent logic*. Does
+this approach satisfactorily explain away the paradox?
+
+1.  *Revising Postulates*: The most commonly adopted strategy for
+    avoiding contraction is to replace the unrestricted, or naïve,
+    comprehension action with a restricted *Separation* or
+    *Aussonderungs* Axiom:
+
+> ∀*y* ∃*z* ∀*x* \[*x* ∈ *z* ↔ *x* ∈ *y* ∧ ϕ(*x*)\] .
+>
+> Given a previously existing set *y* and any first-order predicate
+> expression ϕ(*x*) with the free variable *x*, we may “separate out” a
+> subset *z* of *y* that consists of all and only those members *x* of
+> *y* that satisfy ϕ(*x*). This approach requires specifying separate
+> axioms for the existence of the empty set, a set of pairs, the union
+> of set, etc.
+
+1.  *Drawing a Distinction*: Related to the above strategy is the
+    Cantorian or Gödel-Bernays-von-Neumann set theory, in which there is
+    a dual conception of set that distinguishes *consistent* and
+    *inconsistent* multiplicities (or, alternatively, distinguishes
+    *sets* from *classes*). On the iterative conception of set, in
+    contrast to the Fregean conception of a set as the extension of a
+    predicate, sets are constructed in stages based on the power set
+    operation applied to a set at the previous iteration. Intuitively,
+    the inconsistent multiplicities are those collections that are “too
+    big” to be set in the sense that they have members from arbitrarily
+    high level or iterations.
+
+2.  *Second-Order Arithmetic with Hume’s Principle*: In the 1970’s, the
+    logician George Boolos and his students (i.e., Richard Heck)
+    discovered that Frege’s inconsistent Basic Law V (which implied the
+    unrestricted comprehension axioms) could be replaced with a weaker
+    principle which states that the number of Fs is the same as the
+    number of Gs if, and only if, the Fs can be put into one-to-one
+    correspondence with the Gs.
+
+(V*b*) ∀F∀G(#F = \#G ↔∀*x*(F*x* ↔ G*x*)) ,
+
+which they called *Hume’s principle* insofar as Frege cited a passage
+from Hume’s *Treatise* (Book I, Part III, Section I) in support of the
+principle:
+
+(HP) ∀F∀G(#F = \#G ↔ F ≈ G) .
+
+It turns out that Hume’s principle is *consistent* assuming second
+order-arithmetic is consistent and this principle is sufficient for the
+derivation of arithmetic while avoiding the inconsistent Basic Law V.
+They derive “Frege’s Theorem”, the vindication of a Fregean development
+of arithmetic using Hume’s Principle.
+
+This was a surprising, and deeply satisfying, reversal of Frege’s
+honest, but noble, logicist despair. Although he did not live to see his
+dream fulfilled, Frege was, in the end, vindicated by the history of
+logic. Subsequent generations of logic students, inspired by Frege’s
+visionary dream, eventually completed Frege’s life work by rigorously
+providing the logicist foundations of arithmetic. Due to his logical
+vision, Frege was forced to face the possibility that his life’s work
+was nothing but a failed dream. ON the other hand, without such dreams,
+no dream comes true.
+
+In a subsequent chapter, we will return to Russell’s paradox and show it
+can be discovered from the proof of Cantor’s theorem. We will discuss
+the profound development of Zermelo-Fraenkel axiomatic set, and Gödel’s
+philosophical justification of the axioms based on the Iterative Notion
+of Cantorian Set Theory. We will address such questions as the
+following:
+
+-   What is the difference between Frege’s and Cantor’s conception of
+    set? Is there a way to justify the Zermelo-Fraenkel-Skolem axioms
+    for set theory as articulate a coherence conception of set?
+
+-   Are questions such as Cantor’s Continuum Hypothesis about an
+    objectively existing reality or is set theory the result of human
+    construction?
+
+-   What is Aczel Set Theory with the Anti-Foundation Axiom and why is
+    it useful?
+
+[1] Van Heijenoort, *From Frege to Gödel: A Source Book in Mathematical
+Logic, 1879-1931*, Third Printing, \[1977\], 7.
+
+[2] Van Benthem, *Modal Logic for Open Minds* \[2010\], 1.
+
+[3] At UCLA David Kaplan had proposed a project for an independent study
+in which I formalized Frege’s *Grundgesetze*, which had been translated
+by Montgomery Furth (1933 - 1991). All first-year students had to take a
+four-hour Master’s Comprehensive Examination in Logic at the end of
+their first year. This exam was a “washout” exam and even a graduate
+student who had studied logic at U. C. Berkeley with Robert Vaught had
+failed the exam. When it came time for my class to take the exam, I was
+talking graduate courses in model theory from C. C. Chang, and so had
+permission to arrive late. When I walked into the Philosophy Department
+Reading Room, I saw the other graduate students in my cohort sweating
+out the exam. Typically, there was always a question about Russell’s
+paradox, and so I had toyed with the idea of reproducing Russell’s
+paradox in Frege’s original notation. I came an hour late and left an
+hour early.
+
+[4] Jan von Plato, “Generality and Existence: Quantificational Logic in
+Historical Perspective”, *The Bulletin of Symbolic Logic*, vol. 0, no.
+4, Dec. 2014, p. 418. Von Plato notes that Van Heijenoort’s edition
+missed Frege’s emphasis translating Frege’s *Auch ist einleuchtend* by
+“it is clear also”.
+
+[5] Attributed to Frege in: A. A. B. Aspeitia (2000), *Mathematics as
+grammar: 'Grammar' in Wittgenstein's philosophy of mathematics during
+the Middle Period*, Indiana University, p. 25.
+
+[6] Reference
+
+[7] Today Frege is regarded, along with Bertrand Russell, as one of the
+founding fathers of the analytic tradition in philosophy. Clark Glymour,
+in *Thinking Things Through: An Introduction to Philosophical Issues and
+Achievements* (MIT, 1992) pays tribute to Frege: “Despite the obscurity
+of his writings during his lifetime, Frege’s efforts opened the way to
+much of modern mathematics, modern logic, modern approaches to topics in
+economics, and the modern theory of computation. Many people (including
+me) think that most work of value in twentieth-century philosophy is in
+some way indebted to Frege’s ideas…. Frege stands to logic roughly as
+Newton stands to physics” (p. 120)*.*
+
+[8] Gödel in “Russell’s Mathematical Logic” \[1947\] notes: “It is to be
+regretted that this first comprehensive and thorough going presentation
+of a mathematical logic and the derivation of Mathematics from it is so
+greatly lacking in formal precision in the foundation (contained in
+\*1 - \*21 of *Principia*), that it presents in this respect a
+considerable step backwards as compared with Frege.” Reprinted in
+Benacerraf & Putnam \[1983\], p. 448.
+
+[9] According to Greek mythology, Laelaps (Greek: Λαῖλαψ), the magical
+hound who never failed to catch her prey, was a gift from Zeus to
+Europe, and the Teumessian fox, the magical fox who was destined never
+to be caught, was sent by Dionysus to prey upon the children of Thebes
+as a punishment for the city’s crime. The Regent of Thebes Creon
+assigned Amphitryon the seemingly impossible task of destroying the
+Teumessian fox. Amphitryon decided to deploy Laelaps to catch Teumessian
+fox. The endless chase went on until Zeus, perplexed by their
+contradictory fates, decided to turn them both into stone and then cast
+them into the heavens as the constellations *Canis Major* (Laelaps) and
+*Canis Minor* (the Teumessian fox).
+
+The origin of the Chinese word for contradiction originates in a puzzle
+in the philosophical writings of Han Feizi (3rd century BCE) about a man
+trying to sell a spear and shield. Touting the virtues of the spear, the
+seller claimed it could pierce any shield, while touting the virtues of
+the shield claimed it could fen off all spears. When he is asked what
+would happen when the shield was struck by the spear, the seller had no
+answer being caught in a self-contradiction. The Chinese word for
+self-contradiction 矛盾, or in pinyin máodùn, literally means
+"Spear-Shield."
+
+[10] Stephen Wolfram \[2016\], *Idea Makers: Personal Perspectives in
+the Lives and Ideas of Some Notable People*, p. 43 notes that the
+mention of Boole increased dramatically from the 1980s – 2000.
+
+[11] The contemporary emphasis on STEM (Science, Technology, Engineering
+and Mathematics) to the detriment of the humanities is a misplaced
+emphasis in the opposite direction. What use is a stem without flowers?
+One part of that flower of the humanities is the PETAL of philosophy:
+Philosophy, Epistemology, *Techne*, Aesthetics, and Logic.
+
+[12] Henry VII is known for his efforts to have his first marriage to
+Catherine of Aragon annulled, which resulted in a disagreement with the
+Pope that led to separating the Church of England from papal authority.
+
+[13] *Journal of Symbolic Logic*, vol. 22 \[1957\], 145-157, reprinted
+in van Heijenoort \[Third edition, 1977\], 89-103.
+
+[14] Three logicians walk into a bar. The bartender asks, “Does everyone
+want a beer?” The first two logicians correctly answer, “I don’t know.”
+The third logician then correctly answers the bartender’s question based
+on *deduction* from this information. What did she answer?
+
+[15] Anthony Kenny, *Frege: An Introduction to the Founder of Analytic
+Philosophy* (Penguin Books, 1995), p. 207. Kenny’s heroic assessment of
+Frege is tempered by Hilary Putnam’s sober comments in “Peirce the
+Logician,” *Historia Mathematica* (1982. vol. 9, pp. 290-301, reprinted
+in *Realism with a Human Face* (Harvard University Press: 1990), pp.
+252-60) which register some resistance to Frege’s domineering role
+compared to C. S. Peirce and Schröder in historical discussions of
+logic:
+
+“When I started to trace the later development of logic, the first thing
+I did was to look at Schröder's *Vorlesungen über die Algebra der
+Logik*, ...\[whose\] third volume is on the logic of relations (*Algebra
+und Logik der Relative*, 1895). The three volumes immediately became the
+best-known advanced logic text, and embody what any mathematician
+interested in the study of logic should have known, or at least have
+been acquainted with, in the 1890s.
+
+“While, to my knowledge, no one except Frege ever published a single
+paper in Frege's notation, many famous logicians adopted Peirce-Schröder
+notation, and famous results and systems were published in it. Löwenheim
+stated and proved the Löwenheim theorem (later reproved and strengthened
+by Thoralf Skolem, whose name became attached to it together with
+Löwenheim’s) in Peircian notation. In fact, there is no reference in
+Löwenheim's paper to any logic other than Peirce's. To cite another
+example, Zermelo presented his axioms for set theory in Peirce-Schröder
+notation, and not, as one might have expected, in Russell-Whitehead
+notation.
+
+“One can sum up these simple facts (which anyone can quickly verify) as
+follows: Frege certainly discovered the quantifier first (four years
+before Oscar Howard Mitchell, going by publication dates, which are all
+we have as far as I know). But Leif Ericson probably discovered America
+“first” (forgive me for not counting the native Americans, who of course
+really discovered it “first”). If the effective discoverer, from a
+European point of view, is Christopher Columbus, that is because he
+discovered it so that it stayed discovered (by Europeans, that is), so
+that the discovery became known (by Europeans). Frege did “discover” the
+quantifier in the sense of having the rightful claim to priority; but
+Peirce and his students discovered it in the effective sense. The fact
+is that until Russell appreciated what he had done, Frege was relatively
+obscure, and it was Peirce who seems to have been known to the entire
+world logical community. How many of the people who think that “Frege
+invented logic” are aware of these facts?”

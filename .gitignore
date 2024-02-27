@@ -1,0 +1,14 @@
+/.quarto/
+*.html
+*.pdf
+*.svg
+*_files/
+/.luarc.json
+/_book/
+**/*.svg
+**/*.pdf
+**/*.aux
+**/*.fls
+**/*.fdb_latexmk
+**/*.log
+**/*.

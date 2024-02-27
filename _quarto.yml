@@ -1,0 +1,90 @@
+project:
+  type: book
+  post-render:
+  - rm -r ../docs/gb/
+  - cp -r _book/ ../docs/gb/
+  - mv ../docs/gb/Gödelian-Explorations.pdf ../docs/gb/gb.pdf
+filters:
+  - latex-environment
+  - extensions/rtex.lua
+  - quarto
+  - extensions/after.lua
+bibliography:
+  - references.bib
+  - /home/hypatia/Workspace/Library/zotero.bib
+csl: glossa.csl
+pdf-engine: xelatex
+reference-location: margin
+citation-location: margin
+
+crossref:
+  custom:
+    - kind: float
+      reference-prefix: ""
+      key: eqn
+      latex-env: eqnc
+    - kind: float
+      reference-prefix: Proof Listing
+      key: plst
+      latex-env: plst
+
+book:
+  search:
+    location: navbar
+    type: overlay
+    copy-button: true
+  title: "Gödelian Explorations"
+  author: "Gary Mar"
+  date: "2030-01-01"
+  chapters:
+    - index.qmd
+    # - euclid/euclid.qmd
+    # - cons/GC.qmd
+    # - intro.qmd
+    # - test.qmd
+    - modal/modal.qmd
+    # - retro/retro.qmd
+    # - gödel/gödel.qmd
+    # - wang/wang.qmd
+    # - frege/frege.qmd
+    # - summary.qmd
+    - references.qmd
+
+format-links: [pdf]
+format:
+  html:
+    css: styles.css
+    toc: true
+    toc-depth: 6
+    theme: cosmo # TODO: html theme and fonts
+    grid: 
+        margin-width: 300pt
+  pdf:
+    # cite-method: biblatex
+    keep-tex: true
+    fontfamily: libertinus # TODO: latex font
+    fontsize: 12pt
+    colorlinks: true
+    documentclass: scrreprt
+    classoption: [twoside]
+    geometry:
+      - paperwidth=890pt
+      - paperheight=890pt
+      - left=30pt
+      - textwidth=500pt
+      - marginparsep=30pt
+      - marginparwidth=300pt
+      - top=50pt
+      - bottom=50pt
+      - heightrounded
+    include-in-header:
+      - file: preamble.tex
+    include-before-body:
+      - file: beforebody.tex
+    # no need:
+    # documentclass: tufte-book
+    # classoption: [justified]
+    # TODO:
+    # lof: true
+    # lot: true
+    # toc
