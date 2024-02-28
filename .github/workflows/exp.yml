@@ -11,11 +11,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Install TeXLive
-        uses: xu-cheng/texlive-action@v2
+        uses: teatimeguest/setup-texlive-action@v3
         with:
-          scheme: full
+          packages: >-
+            scheme-basic
+      - name: Install Packages from APK
+        uses: awalsh128/cache-apt-pkgs-action@latest
       - name: Quarto Setup
         uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          packages: pdf2svg
+          version: 1.0
+      - name: Check Env
+        run: |
+          xelatex --version
+          quarto --version
+          pdf2svg --version
       - name: Quarto Render
         uses: quarto-dev/quarto-actions/render@v2
         with:
