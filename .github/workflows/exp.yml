@@ -16,7 +16,7 @@ jobs:
         run: |
           apt update
           apt install pdf2svg
-          wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.5.22/quarto-1.5.22-linux-amd64.deb quarto.deb
+          wget -O quarto.deb https://github.com/quarto-dev/quarto-cli/releases/download/v1.5.22/quarto-1.5.22-linux-amd64.deb
           dpkg -i quarto.deb
           quarto render
       # - name: Install Packages from APT
