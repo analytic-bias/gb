@@ -5,7 +5,7 @@ project:
   # post-render:
   # - rm -r ../docs/gb/
   # - cp -r _book/ ../docs/gb/
-  # - mv ../docs/gb/Gödelian-Explorations.pdf ../docs/gb/gb.pdf
+  - mv _book/Gödelian-Explorations.pdf _book/gb.pdf
 filters:
   - latex-environment
   - extensions/rtex.lua
