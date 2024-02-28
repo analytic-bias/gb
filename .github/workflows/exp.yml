@@ -12,23 +12,26 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: APT
+      - name: Cmd
         run: |
           apt update
           apt install pdf2svg
+          wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.5.22/quarto-1.5.22-linux-amd64.deb quarto.deb
+          dpkg -i quarto.deb
+          quarto render
       # - name: Install Packages from APT
       #   uses: awalsh128/cache-apt-pkgs-action@latest
       #   with:
       #     packages: pdf2svg
       #     execute_install_scripts: true
       #     version: 1.0
-      - name: Quarto Setup
-        uses: quarto-dev/quarto-actions/setup@v2
-      - name: Quarto Render
-        uses: quarto-dev/quarto-actions/render@v2
-        with:
-          # to: html # If set, it will be equivalent to `quarto render --to html`
-          path: . # By default, the current working dir is used i.e `quarto render .`
+      # - name: Quarto Setup
+      #   uses: quarto-dev/quarto-actions/setup@v2
+      # - name: Quarto Render
+      #   uses: quarto-dev/quarto-actions/render@v2
+      #   with:
+      #     # to: html # If set, it will be equivalent to `quarto render --to html`
+      #     path: . # By default, the current working dir is used i.e `quarto render .`
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload Artifact
