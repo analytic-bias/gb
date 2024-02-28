@@ -11,10 +11,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Install TeXLive
-        uses: teatimeguest/setup-texlive-action@v3
+        uses: xu-cheng/texlive-action@v2
         with:
-          package-file: |
-            **/DEPENDS.txt
+          scheme: full
+          run: |
+            apk add make
+            make
       - name: Install Packages from APK
         uses: awalsh128/cache-apt-pkgs-action@latest
         with:
