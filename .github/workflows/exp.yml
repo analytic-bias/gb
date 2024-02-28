@@ -18,6 +18,9 @@ jobs:
           version: 1.0
       - name: Quarto Setup
         uses: quarto-dev/quarto-actions/setup@v2
+      - name: Fix fmt file
+        run: |
+          sudo fmtutil-sys --all
       - name: Quarto Render
         uses: quarto-dev/quarto-actions/render@v2
         with:
