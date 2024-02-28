@@ -2,10 +2,10 @@ project:
   type: book
   pre-render:
     - wget -O hypatia-zotero.bib https://dl.dropboxusercontent.com/scl/fi/zu7le8rxs64npx5mge8hl/zotero.bib?rlkey=s6faqqmqmal9gpzbt942wpgyl&dl=1
-  # post-render:
+  post-render:
+    - mv _book/Gödelian-Explorations.pdf _book/gb.pdf
   # - rm -r ../docs/gb/
   # - cp -r _book/ ../docs/gb/
-  - mv _book/Gödelian-Explorations.pdf _book/gb.pdf
 filters:
   - latex-environment
   - extensions/rtex.lua
