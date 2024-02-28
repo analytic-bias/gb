@@ -1,4 +1,4 @@
-name: Exploration Book Quarto Build and Publish to Pages
+name: Quarto Render and Publish to Pages
 on: workflow_dispatch
 
 jobs:
@@ -8,13 +8,14 @@ jobs:
       name: github-pages
       url: ${{steps.deployment.outputs.page_url}}
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install TeXLive
+        uses: xu-cheng/texlive-action@v2
+        with:
+          scheme: full
       - name: Quarto Setup
         uses: quarto-dev/quarto-actions/setup@v2
-        with:
-          tinytex: true
-      - run: |
-          quarto --version
       - name: Quarto Render
         uses: quarto-dev/quarto-actions/render@v2
         with:
