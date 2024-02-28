@@ -1,4 +1,6 @@
-# To all collaborators who don't have TeXLive and Quarto,
+# To all collaborators who don't have TeXLive and Quarto<sup>1</sup>,
+
+<sup>1</sup> Yes you need both as `TiKZ` is used extensively. Currently my working copy is still at [https://analytic-bias.github.io/agora/gb/](https://analytic-bias.github.io/agora/gb/).
 
 Now you may commiting the files (by using `git` on your device or by using `GitHub Codespaces`), and go to the [Actions page](https://github.com/analytic-bias/gb/actions/workflows/exp.yml) to trigger a cloud compilation and deployment by clicking `Run workflow`.
 
