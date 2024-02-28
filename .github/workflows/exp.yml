@@ -10,21 +10,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Install Packages from APK
-        uses: awalsh128/cache-apt-pkgs-action@latest
-        with:
-          packages: pdf2svg
-          execute_install_scripts: true
-          version: 1.0
-      - name: Quarto Setup
-        uses: quarto-dev/quarto-actions/setup@v2
-        with:
-          tinytex: true
-      - name: Quarto Render
-        uses: quarto-dev/quarto-actions/render@v2
-        with:
-          # to: html # If set, it will be equivalent to `quarto render --to html`
-          path: . # By default, the current working dir is used i.e `quarto render .`
+      - name: Custom Quarto Action
+        uses: actions/quarto@v1
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload Artifact
