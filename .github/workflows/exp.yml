@@ -10,10 +10,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Install TeXLive
-        uses: xu-cheng/texlive-action@v2
-        with:
-          scheme: full
       - name: Install Packages from APK
         uses: awalsh128/cache-apt-pkgs-action@latest
         with:
@@ -22,16 +18,12 @@ jobs:
           version: 1.0
       - name: Quarto Setup
         uses: quarto-dev/quarto-actions/setup@v2
-      - name: Check Env
-        run: |
-          xelatex --version
-          quarto --version
-          pdf2svg --version
-      - name: Quarto Render
-        uses: quarto-dev/quarto-actions/render@v2
+      - name: Install TeXLive and Quarto Render in Docker
+        uses: xu-cheng/texlive-action@v2
         with:
-          # to: html # If set, it will be equivalent to `quarto render --to html`
-          path: . # By default, the current working dir is used i.e `quarto render .`
+          scheme: full
+          run: |
+            quarto render
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload Artifact
