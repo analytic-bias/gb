@@ -2,13 +2,16 @@ name: Quarto Render and Publish to Pages
 on: workflow_dispatch
 
 jobs:
-  build-quarto:
+  build-quarto-and-publish:
     runs-on: ubuntu-latest
     container:
       image: danteev/texlive:edge
     environment:
       name: github-pages
       url: ${{steps.deployment.outputs.page_url}}
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -33,13 +36,13 @@ jobs:
       #     # to: html # If set, it will be equivalent to `quarto render --to html`
       #     path: . # By default, the current working dir is used i.e `quarto render .`
       - name: Setup Pages
-        uses: actions/configure-pages@v3
+        uses: actions/configure-pages@v4
       - name: Upload Artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           # upload entire directory
           path: './_book/'
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
         
