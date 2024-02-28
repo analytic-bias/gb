@@ -5,19 +5,23 @@ jobs:
   build-quarto:
     runs-on: ubuntu-latest
     container:
-      image: danteev/texlive
+      image: danteev/texlive:edge
     environment:
       name: github-pages
       url: ${{steps.deployment.outputs.page_url}}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Install Packages from APK
-        uses: awalsh128/cache-apt-pkgs-action@latest
-        with:
-          packages: pdf2svg
-          execute_install_scripts: true
-          version: 1.0
+      - name: APT
+        run: |
+          sudo apt update
+          sudo apt install pdf2svg
+      # - name: Install Packages from APT
+      #   uses: awalsh128/cache-apt-pkgs-action@latest
+      #   with:
+      #     packages: pdf2svg
+      #     execute_install_scripts: true
+      #     version: 1.0
       - name: Quarto Setup
         uses: quarto-dev/quarto-actions/setup@v2
       - name: Quarto Render
