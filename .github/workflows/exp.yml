@@ -14,21 +14,9 @@ jobs:
         uses: actions/checkout@v4
       - name: APT
         run: |
-          sudo apt update
-          sudo apt install pdf2svg
-      # - name: Install Packages from APT
-      #   uses: awalsh128/cache-apt-pkgs-action@latest
-      #   with:
-      #     packages: pdf2svg
-      #     execute_install_scripts: true
-      #     version: 1.0
-      - name: Quarto Setup
-        uses: quarto-dev/quarto-actions/setup@v2
-      - name: Quarto Render
-        uses: quarto-dev/quarto-actions/render@v2
-        with:
-          # to: html # If set, it will be equivalent to `quarto render --to html`
-          path: . # By default, the current working dir is used i.e `quarto render .`
+          apt update
+          apt install pdf2svg quarto
+          quarto render
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload Artifact
