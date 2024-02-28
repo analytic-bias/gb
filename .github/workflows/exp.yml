@@ -4,14 +4,27 @@ on: workflow_dispatch
 jobs:
   build-quarto:
     runs-on: ubuntu-latest
+    container:
+      image: danteev/texlive
     environment:
       name: github-pages
       url: ${{steps.deployment.outputs.page_url}}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Custom Quarto Action
-        uses: ./.github/actions/quarto
+      - name: Install Packages from APK
+        uses: awalsh128/cache-apt-pkgs-action@latest
+        with:
+          packages: pdf2svg
+          execute_install_scripts: true
+          version: 1.0
+      - name: Quarto Setup
+        uses: quarto-dev/quarto-actions/setup@v2
+      - name: Quarto Render
+        uses: quarto-dev/quarto-actions/render@v2
+        with:
+          # to: html # If set, it will be equivalent to `quarto render --to html`
+          path: . # By default, the current working dir is used i.e `quarto render .`
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload Artifact
