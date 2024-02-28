@@ -13,11 +13,13 @@ jobs:
       - name: Install Packages from APK
         uses: awalsh128/cache-apt-pkgs-action@latest
         with:
-          packages: pdf2svg texlive-full
+          packages: pdf2svg
           execute_install_scripts: true
           version: 1.0
       - name: Quarto Setup
         uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          tinytex: true
       - name: Fix fmt file
         run: |
           sudo fmtutil-sys --all
